@@ -35,13 +35,13 @@ Dynamic Mobile Menu: A clean, collapsible hamburger menu for mobile users.
 
 ## Folder structure
 
-.
+```
 ├── index.html        # Main portfolio page
 ├── hero-bg.jpeg      # Background image for the hero section
 ├── profile-photo.png # Profile picture for the About section
 ├── My_resume (1).pdf # Your resume file (ensure it's updated)
 └── README.md         # This documentation file
-
+```
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
