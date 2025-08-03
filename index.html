@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chima Ben - Portfolio</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link
-      <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="relative">
+  <body class="relative bg-gray-900">
+    <!-- Header -->
     <header
       id="main-header"
       class="w-full text-white p-4 absolute top-0 left-0 z-50 backdrop-blur-sm"
@@ -21,15 +24,14 @@
           id="logo"
           class="w-auto text-white text-xl md:text-2xl font-bold inline"
         >
-          <a href="#hero" class="w-auto">
+          <a href="#hero" class="w-auto" aria-label="Chima Ben Home">
             <i class="fas fa-user text-yellow-500"></i> Chima Ben</a
           >
         </div>
 
-        <!-- Mobile Menu Button -->
-       <button
+        <button
           id="menu-button"
-          class="text-white md:hidden focus:outline-none hover:text-yellow-500 focus:text-yellow-500 transition-colors duration-300 relative z-50 right-[-40px]"
+          class="text-white md:hidden focus:outline-none transition-colors duration-300 relative z-50 right-[-56px]"
           aria-label="Toggle Menu"
         >
           <svg
@@ -47,12 +49,12 @@
             ></path>
           </svg>
         </button>
-        <!-- Navigation Menu -->
+        <!-- Navigation -->
         <nav id="main-nav" class="inline-flex items-center">
           <ul class="hidden md:flex items-center space-x-4 list-none">
             <li>
               <a
-                href="#home"
+                href="#hero"
                 class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
                 ><i class="fas fa-home text-yellow-500"></i> HOME</a
               >
@@ -88,194 +90,506 @@
           </ul>
         </nav>
         <div id="contact-info" class="inline text-white ml-4 max-md:hidden">
-          
           <i class="fas fa-phone"></i>
-          <a href="tel:+1234567890" class="text-yellow-500">+2348023678500</a>
+          <a href="tel:+2348023678500" class="text-yellow-500"
+            >+2348023678500</a
+          >
         </div>
       </div>
     </header>
-<!-- Mobile Menu (initially hidden, revealed by JS when hamburger is clicked) -->
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-4 mt-16 fixed w-full z-40 shadow-lg">
-        <ul class="flex flex-col space-y-3 px-6 list-none p-0 m-0">
-            <li><a href="#hero" class="block text-gray-300 hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"><i class="fas fa-home text-yellow-500 mr-2"></i> HOME</a></li>
-            <li><a href="#about" class="block text-gray-300 hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"><i class="fas fa-user text-yellow-500 mr-2"></i> ABOUT</a></li>
-            <li><a href="#projects" class="block text-gray-300 hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"><i class="fas fa-file text-yellow-500 mr-2"></i> PROJECTS</a></li>
-            <li><a href="#skills" class="block text-gray-300 hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"><i class="fas fa-cogs text-yellow-500 mr-2"></i> SKILLS</a></li>
-            <li><a href="#contact" class="block text-gray-300 hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"><i class="fas fa-envelope text-yellow-500 mr-2"></i> CONTACT</a></li>
-            <li class="pt-2"><a href="tel:+2348023678500" class="block text-yellow-500 py-2 no-underline font-semibold hover:text-yellow-400 transition-colors duration-300"><i class="fas fa-phone mr-2"></i> +2348023678500</a></li>
-        </ul>
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-gray-800 py-4 mt-16 fixed w-full z-40 shadow-lg"
+    >
+      <ul class="flex flex-col space-y-3 px-6 list-none p-0 m-0">
+        <li>
+          <a
+            href="#hero"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-home text-yellow-500 mr-2"></i> HOME</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-user text-yellow-500 mr-2"></i> ABOUT</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-file text-yellow-500 mr-2"></i> PROJECTS</a
+          >
+        </li>
+        <li>
+          <a
+            href="#skills"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-cogs text-yellow-500 mr-2"></i> SKILLS</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-envelope text-yellow-500 mr-2"></i> CONTACT</a
+          >
+        </li>
+        <li class="pt-2">
+          <a
+            href="tel:+2348023678500"
+            class="block text-yellow-500 py-2 no-underline font-semibold hover:text-yellow-400 transition-colors duration-300"
+            ><i class="fas fa-phone mr-2"></i> +2348023678500</a
+          >
+        </li>
+      </ul>
     </div>
 
     <main>
+      <!-- Hero Section -->
       <section
         id="hero"
-        class="w-full h-screen bg-cover bg-center relative "
+        class="w-full h-screen bg-cover bg-center relative"
         style="background-image: url('./hero-bg.jpeg')"
       >
-        <div class="hero-content text-center text-white backdrop-blur-sm flex items-center justify-center h-full flex-col">
-          <h1 class="text-white  text-lg md:text-5xl font-bold">Hi, I am <span class="text-yellow-500">Chima Ben</span></h1>
-          <p class="text-white text-sm md:w-1/2 mx-auto px-1">Web Designer & Developer with a strong interest in helping brands and businesses grow through clean, professional websites.</p>
+        <div
+          class="hero-content text-center text-white backdrop-blur-sm flex items-center justify-center h-full flex-col"
+        >
+          <h1 class="text-white text-lg md:text-5xl font-bold">
+            Hi, I am <span class="text-yellow-500">Chima Ben</span>
+          </h1>
+          <p class="text-white text-sm md:w-1/2 mx-auto px-1">
+            Web Designer & Developer with a strong interest in helping brands
+            and businesses grow through clean, professional websites.
+          </p>
           <div id="social-links" class="mt-4 space-x-4">
             <a
               href="https://x.com/TheDev_Knight?t=plgKzWGsITg8SMXtMxjvjQ&s=09"
               aria-label="Twitter"
+              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
               ><i class="fab fa-x-twitter"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/chima-ben?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               aria-label="LinkedIn"
+              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://github.com/benmarcel" aria-label="github"><i class="fab fa-github"></i></a>
+            <a
+              href="#"
+              aria-label="whatsapp"
+              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://github.com/benmarcel"
+              aria-label="github"
+              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
+              ><i class="fab fa-github"></i
+            ></a>
           </div>
         </div>
       </section>
-
+      <!-- About Section -->
       <section id="about" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
         <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-           <h2 class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider">ABOUT ME</h2>
-          <div id="about-content-wrapper" class="flex flex-col sm:flex-row items-center justify-between space-x-2">
-            <div class="profile-picture flex-shrink-0 w-1/2 md:h-full sm:w-72 sm:h-72 rounded-md shadow-xl">
-              <img src="./profile-photo.png" alt="chima ben profile picture" width="100%" height="100%" />
+          <h2
+            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+          >
+            ABOUT ME
+          </h2>
+          <div
+            id="about-content-wrapper"
+            class="flex flex-col sm:flex-row items-center justify-between space-x-2"
+          >
+            <div
+              class="profile-picture flex-shrink-0 w-1/2 md:h-full sm:w-72 sm:h-72 rounded-md shadow-xl"
+            >
+              <img
+                src="./profile-photo.png"
+                alt="Chima Ben profile picture"
+                width="100%"
+                height="100%"
+                loading="lazy"
+                class="rounded-md"
+              />
             </div>
-            <div class="about-details flex-grow max-w-2xl text-center md:text-left">
-              <h3 class="text-xl sm:text-2xl text-white font-semibold mb-2 mt-2">Hi There! I'm Chima Ben</h3>
-              <h4 class="text-sm sm:text-lg text-yellow-500 mb-4 ">Web Designer & Developer</h4>
-              <p class="text-gray-300 leading-relaxed mb-6 text-base sm:text-sm">
-                I'm Chima Ben, a Web Designer and Developer with a strong interest in creating clean, intuitive, and high-performing digital experiences that help brands grow, combining modern design, efficient code, and a passion for continuous learning.</p>
-              <ul class="list-none p-0 m-0 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 mb-8">
-                <li class="text-gray-300 text-base"><span class="font-bold text-white mr-2">Birth Day:</span> June 1st</li>
-                <li class="text-gray-300 text-base"><span class="font-bold text-white mr-2">Location:</span> Nigeria</li>
-                <li class="text-gray-300 text-base"><span class="font-bold text-white mr-2">Email:</span> <a href="mailto:benmarcel381@gmail.com" class="text-yellow-500 hover:text-yellow-400 no-underline">benmarcel381@gmail.com</a></li>
-                <li class="text-gray-300 text-base"><span class="font-bold text-white mr-2">Phone:</span> +2348023678500</li>
-                <li class="text-gray-300 text-base"><span class="font-bold text-white mr-2">Language:</span> English</li>
-                <li class="text-gray-300 text-base"><span class="font-bold text-white mr-2">Freelance:</span> Available</li>
+            <div
+              class="about-details flex-grow max-w-2xl text-center md:text-left"
+            >
+              <h3
+                class="text-xl sm:text-2xl text-white font-semibold mb-2 mt-2"
+              >
+                Hi There! I'm Chima Ben
+              </h3>
+              <h4 class="text-sm sm:text-lg text-yellow-500 mb-4">
+                Web Designer & Developer
+              </h4>
+              <p class="text-white leading-relaxed mb-6 text-base sm:text-sm">
+                I'm Chima Ben, a Web Designer and Developer with a strong
+                interest in creating clean, intuitive, and high-performing
+                digital experiences that help brands grow, combining modern
+                design, efficient code, and a passion for continuous learning.
+              </p>
+              <ul
+                class="list-none p-0 m-0 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 mb-8"
+              >
+                <li class="text-white text-base">
+                  <span class="font-bold text-white mr-2">Birth Day:</span>
+                  June 1st
+                </li>
+                <li class="text-white text-base">
+                  <span class="font-bold text-white mr-2">Location:</span>
+                  Nigeria
+                </li>
+                <li class="text-white text-base">
+                  <span class="font-bold text-white mr-2">Email:</span>
+                  <a
+                    href="mailto:benmarcel381@gmail.com"
+                    class="text-yellow-500 hover:text-yellow-400 no-underline"
+                    >benmarcel381@gmail.com</a
+                  >
+                </li>
+                <li class="text-white text-base">
+                  <span class="font-bold text-white mr-2">Phone:</span>
+                  +2348023678500
+                </li>
+                <li class="text-white text-base">
+                  <span class="font-bold text-white mr-2">Language:</span>
+                  English
+                </li>
+                <li class="text-white text-base">
+                  <span class="font-bold text-white mr-2">Freelance:</span>
+                  Available
+                </li>
               </ul>
-              <a href="path/to/your-cv.pdf" class="inline-block bg-yellow-500 text-gray-900 py-3 px-8 rounded-md no-underline font-semibold transition-all duration-300 hover:bg-yellow-600 hover:-translate-y-1" download
+              <a
+                href="./My_resume (1).pdf"
+                class="inline-block bg-yellow-500 text-gray-900 py-3 px-8 rounded-md no-underline font-semibold transition-all duration-300 hover:bg-yellow-600 hover:-translate-y-1"
+                download
                 >Download CV</a
               >
             </div>
           </div>
         </div>
       </section>
-
+      <!-- Projects Section -->
       <section id="projects" class="bg-white py-16 sm:py-20 text-gray-200">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-    <h2 class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider">
-      Projects
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
-
-      <!-- Movie Recommendation App -->
-      <a href="https://movierecc.netlify.app/"><div class="project-card bg-gray-800 p-6 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 max-w-sm w-full">
-        <i class="fas fa-film text-yellow-500 text-5xl mb-4"></i>
-        <h3 class="text-2xl font-semibold text-white mb-3">Movie Recommendation App</h3>
-        <p class="text-gray-300 leading-relaxed text-base">
-          Built a smart movie recommendation PWA using React, MongoDB and TMDB API. Users get suggestions based on favourite genres, create watchlists....
-        </p>
-      </div></a>
-
-      <!-- Agro Flow -->
-      <a href="https://benmarcel.github.io/agro_flow_project/">
-        <div class="project-card bg-gray-800 p-8 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 max-w-sm w-full">
-        <i class="fas fa-seedling text-yellow-500 text-5xl mb-4"></i>
-        <h3 class="text-2xl font-semibold text-white mb-3">Agro Flow</h3>
-        <p class="text-gray-300 leading-relaxed text-lg">
-          A web platform that connects farmers with storage facilities and transporters. Built with HTML, CSS, and JavaScript for rural-urban logistics.
-        </p>
-      </div>
-      </a>
-
-      <!-- Telemedicine App -->
-     <a href="https://github.com/benmarcel/Farmers-Hub.git"> <div class="project-card bg-gray-800 p-8 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 max-w-sm w-full">
-        <i class="fas fa-stethoscope text-yellow-500 text-5xl mb-4"></i>
-        <h3 class="text-2xl font-semibold text-white mb-3">Telemedicine App</h3>
-        <p class="text-gray-300 leading-relaxed text-lg">
-          Designed and developed a telehealth platform for remote consultations. Features include appointment booking, video calls, and health tips.
-        </p>
-      </div></a>
-
-    </div>
-  </div>
-</section>
-
-       <section id="skills" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
         <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-          <h2 class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider">MY SKILLS</h2>
-          <div class="flex flex-col md:flex-row justify-center items-start md:items-center gap-12 flex-wrap">
+          <h2
+            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+          >
+            Projects
+          </h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center"
+          >
+            <a
+              href="https://movierecc.netlify.app/"
+              class="block w-full max-w-sm no-underline"
+              aria-label="View Movie Recommendation App"
+            >
+              <div
+                class="project-card bg-gray-800 p-6 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
+              >
+                <i class="fas fa-film text-yellow-500 text-5xl mb-4"></i>
+                <h3 class="text-2xl font-semibold text-white mb-3">
+                  Movie Recommendation App
+                </h3>
+                <p class="text-white leading-relaxed text-base">
+                  Built a smart movie recommendation PWA using React, MongoDB
+                  and TMDB API. Users get suggestions based on favourite genres,
+                  create watchlists....
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://benmarcel.github.io/agro_flow_project/"
+              class="block w-full max-w-sm no-underline"
+              aria-label="View Agro Flow project"
+            >
+              <div
+                class="project-card bg-gray-800 p-8 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
+              >
+                <i class="fas fa-seedling text-yellow-500 text-5xl mb-4"></i>
+                <h3 class="text-2xl font-semibold text-white mb-3">
+                  Agro Flow
+                </h3>
+                <p class="text-white leading-relaxed text-lg">
+                  A web platform that connects farmers with storage facilities
+                  and transporters. Built with HTML, CSS, and JavaScript for
+                  rural-urban logistics.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/benmarcel/Farmers-Hub.git"
+              class="block w-full max-w-sm no-underline"
+              aria-label="View Telemedicine App project"
+            >
+              <div
+                class="project-card bg-gray-800 p-8 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
+              >
+                <i class="fas fa-stethoscope text-yellow-500 text-5xl mb-4"></i>
+                <h3 class="text-2xl font-semibold text-white mb-3">
+                  Telemedicine App
+                </h3>
+                <p class="text-white leading-relaxed text-lg">
+                  Designed and developed a telehealth platform for remote
+                  consultations. Features include appointment booking, video
+                  calls, and health tips.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+          <h2
+            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+          >
+            MY SKILLS
+          </h2>
+          <div
+            class="flex flex-col md:flex-row justify-center items-start md:items-center gap-12 flex-wrap"
+          >
             <div class="skills-intro flex-1 max-w-md text-center md:text-left">
-              <p class="text-gray-300 text-lg leading-relaxed">
-               💼  All the skills that I have in that field of work are mentioned.
+              <p class="text-white text-lg leading-relaxed">
+                💼 All the skills that I have in that field of work are
+                mentioned.
               </p>
             </div>
             <div class="skills-list flex-2 max-w-xl w-full">
               <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2">JavaScript</span>
-                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-                  <div class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out" style="width: 90%"></div>
+                <span class="block text-white text-lg font-medium mb-2"
+                  >JavaScript</span
+                >
+                <div
+                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+                    style="width: 90%"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
               <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2">Figma</span>
-                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-                  <div class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out" style="width: 40%"></div>
+                <span class="block text-white text-lg font-medium mb-2"
+                  >Figma</span
+                >
+                <div
+                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+                    style="width: 40%"
+                    role="progressbar"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
               <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2">HTML & CSS / Tailwind CSS</span>
-                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-                  <div class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out" style="width: 95%"></div>
+                <span class="block text-white text-lg font-medium mb-2"
+                  >HTML & CSS / Tailwind CSS</span
+                >
+                <div
+                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+                    style="width: 95%"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
               <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2">React</span>
-                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-                  <div class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out" style="width: 75%"></div>
+                <span class="block text-white text-lg font-medium mb-2"
+                  >React</span
+                >
+                <div
+                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+                    style="width: 75%"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
               <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2">Node.js and Express</span>
-                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-                  <div class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out" style="width: 65%"></div>
+                <span class="block text-white text-lg font-medium mb-2"
+                  >Node.js and Express</span
+                >
+                <div
+                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+                    style="width: 65%"
+                    role="progressbar"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
               <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2">Google Workspace</span>
-                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-                  <div class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out" style="width: 95%"></div>
+                <span class="block text-white text-lg font-medium mb-2"
+                  >Google Workspace</span
+                >
+                <div
+                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+                    style="width: 95%"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
               <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2">SQL</span>
-                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-                  <div class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out" style="width: 55%"></div>
+                <span class="block text-white text-lg font-medium mb-2"
+                  >SQL</span
+                >
+                <div
+                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
+                >
+                  <div
+                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+                    style="width: 55%"
+                    role="progressbar"
+                    aria-valuenow="55"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
 
-     <footer class="bg-gray-900 py-8 text-gray-400 text-center text-sm">
+      <!-- Contact Section -->
+      <section id="contact" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+          <h2
+            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+          >
+            CONTACT ME
+          </h2>
+          <form
+            action="#"
+            method="POST"
+            class="max-w-lg mx-auto bg-gray-900 p-8 rounded-lg shadow-xl"
+          >
+            <div class="mb-6">
+              <label
+                for="name"
+                class="block text-white text-lg font-medium mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                aria-required="true"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="email"
+                class="block text-white text-lg font-medium mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                aria-required="true"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="message"
+                class="block text-white text-lg font-medium mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="inline-block bg-yellow-500 text-gray-900 py-3 px-8 rounded-md no-underline font-semibold transition-all duration-300 hover:bg-yellow-600 hover:-translate-y-1"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-gray-400 text-center text-sm">
       <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
         <p>&copy; 2025 Chima Ben. All Rights Reserved.</p>
       </div>
     </footer>
 
-      <!-- JavaScript for Mobile Menu Toggle -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuButton = document.getElementById('menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById("menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-            if (menuButton && mobileMenu) {
-                menuButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
-        });
+        if (menuButton && mobileMenu) {
+          menuButton.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+            // Optional: Add aria-expanded for better accessibility
+            let isExpanded =
+              menuButton.getAttribute("aria-expanded") === "true" || false;
+            menuButton.setAttribute("aria-expanded", !isExpanded);
+          });
+
+          // Close mobile menu when a link is clicked
+          mobileMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+              mobileMenu.classList.add("hidden");
+              menuButton.setAttribute("aria-expanded", "false");
+            });
+          });
+        }
+      });
     </script>
   </body>
 </html>
