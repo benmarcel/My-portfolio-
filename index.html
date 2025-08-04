@@ -1,40 +1,471 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chima Ben - Web Designer & Developer Portfolio" />
-    <meta name="keywords" content="Chima Ben, Web Designer, Web Developer, Portfolio, Projects, Skills" />
-    <meta name="author" content="Chima Ben" />
-   
-    
-    <title>Chima Ben - Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="relative bg-gray-900">
-    
-    <!-- Header -->
-    <header
-      id="main-header"
-      class="w-full text-white p-4 absolute top-0 left-0 z-50 backdrop-blur-sm"
-    >
-      <div class="flex justify-between items-center mx-auto max-w-6xl px-4">
-        <div
-          id="logo"
-          class="w-auto text-white text-xl md:text-2xl font-bold inline"
-        >
-          <a href="#hero" class="w-auto" aria-label="Chima Ben Home">
-            <i class="fas fa-user text-yellow-500"></i> Chima Ben</a
-          >
-        </div>
-
+‎<!DOCTYPE html>
+‎<html lang="en">
+‎  <head>
+‎    <meta charset="UTF-8" />
+‎    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+‎    <meta name="description" content="Chima Ben - Web Designer & Developer Portfolio" />
+‎    <meta name="keywords" content="Chima Ben, Web Designer, Web Developer, Portfolio, Projects, Skills" />
+‎    <meta name="author" content="Chima Ben" />
+‎   
+‎    
+‎    <title>Chima Ben - Portfolio</title>
+‎    <link
+‎      rel="stylesheet"
+‎      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+‎      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+‎      crossorigin="anonymous"
+‎      referrerpolicy="no-referrer"
+‎    />
+‎    <script src="https://cdn.tailwindcss.com"></script>
+‎  </head>
+‎  <body class= "bg-gray-900">
+‎   <div class="relative w-full"> 
+‎<!-- header  --> 
+‎    <header
+‎      id="main-header"
+‎      class="w-full text-white p-4 absolute top-0 left-0 z-50 backdrop-blur-sm"
+‎    >
+‎      <div class="flex justify-between items-center mx-auto max-w-6xl px-4">
+‎        <div
+‎          id="logo"
+‎          class="w-auto text-white text-xl md:text-2xl font-bold inline"
+‎        >
+‎          <a href="#hero" class="w-auto" aria-label="Chima Ben Home">
+‎            <i class="fas fa-user text-yellow-500"></i> Chima Ben</a
+‎          >
+‎        </div>
+‎
+‎        <nav id="main-nav" class="inline-flex items-center">
+‎          <ul class="hidden md:flex items-center space-x-4 list-none">
+‎            <li>
+‎              <a
+‎                href="#hero"
+‎                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
+‎                ><i class="fas fa-home text-yellow-500"></i> HOME</a
+‎              >
+‎            </li>
+‎            <li>
+‎              <a
+‎                href="#about"
+‎                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
+‎                ><i class="fas fa-user text-yellow-500"></i> ABOUT</a
+‎              >
+‎            </li>
+‎            <li>
+‎              <a
+‎                href="#projects"
+‎                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
+‎                ><i class="fas fa-folder text-yellow-500"></i> PROJECTS</a
+‎              >
+‎            </li>
+‎            <li>
+‎              <a
+‎                href="#skills"
+‎                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
+‎                ><i class="fas fa-cogs text-yellow-500"></i> SKILLS</a
+‎              >
+‎            </li>
+‎            <li>
+‎              <a
+‎                href="#contact"
+‎                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
+‎                ><i class="fas fa-envelope text-yellow-500"></i> CONTACT</a
+‎              >
+‎            </li>
+‎          </ul>
+‎        </nav>
+‎        <div id="contact-info" class="inline text-white ml-4 max-md:hidden">
+‎          <i class="fas fa-phone"></i>
+‎          <a href="tel:+2348023678500" class="text-yellow-500"
+‎            >+2348023678500</a
+‎          >
+‎        </div>
+‎      </div>
+‎    </header>
+‎
+‎    
+‎        <input type="checkbox" id="toggle-menu" class="hidden peer" />
+‎
+‎        <label
+‎          for="toggle-menu"
+‎          class="absolute top-4 left-[80%] text-white focus:outline-none transition-colors duration-300 z-50 cursor-pointer"
+‎          aria-label="Toggle Menu"
+‎        >
+‎          <svg
+‎            class="w-6 h-6"
+‎            fill="none"
+‎            stroke="currentColor"
+‎            viewBox="0 0 24 24"
+‎            xmlns="http://www.w3.org/2000/svg"
+‎          >
+‎            <path
+‎              stroke-linecap="round"
+‎              stroke-linejoin="round"
+‎              stroke-width="2"
+‎              d="M4 6h16M4 12h16M4 18h16"
+‎            ></path>
+‎          </svg>
+‎        </label>
+‎        
+‎        <div
+‎          id="mobile-menu"
+‎          class="hidden peer-checked:block bg-gray-800 py-4 mt-16 fixed w-full z-40 shadow-lg"
+‎        >
+‎          <ul class="flex flex-col space-y-3 px-6 list-none p-0 m-0">
+‎            <li>
+‎              <a
+‎                href="#hero"
+‎                class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+‎                ><i class="fas fa-home text-yellow-500 mr-2"></i> HOME</a
+‎              >
+‎            </li>
+‎            <li>
+‎              <a
+‎                href="#about"
+‎                class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+‎                ><i class="fas fa-user text-yellow-500 mr-2"></i> ABOUT</a
+‎              >
+‎            </li>
+‎            <li>
+‎              <a
+‎                href="#projects"
+‎                class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+‎                ><i class="fas fa-file text-yellow-500 mr-2"></i> PROJECTS</a
+‎              >
+‎            </li>
+‎            <li>
+‎              <a
+‎                href="#skills"
+‎                class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+‎                ><i class="fas fa-cogs text-yellow-500 mr-2"></i> SKILLS</a
+‎              >
+‎            </li>
+‎            <li>
+‎              <a
+‎                href="#contact"
+‎                class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+‎                ><i class="fas fa-envelope text-yellow-500 mr-2"></i> CONTACT</a
+‎              >
+‎            </li>
+‎            <li class="pt-2">
+‎              <a
+‎                href="tel:+2348023678500"
+‎                class="block text-yellow-500 py-2 no-underline font-semibold hover:text-yellow-400 transition-colors duration-300"
+‎                ><i class="fas fa-phone mr-2"></i> +2348023678500</a
+‎              >
+‎            </li>
+‎          </ul>
+‎        </div>
+‎    </div>
+‎
+‎
+‎    <main>
+‎      <section
+‎        id="hero"
+‎        class="w-full h-screen bg-cover bg-center relative"
+‎        style="background-image: url('./hero-bg.jpeg')"
+‎      >
+‎        <div
+‎          class="hero-content text-center text-white backdrop-blur-sm flex items-center justify-center h-full flex-col"
+‎        >
+‎          <h1 class="text-white text-lg md:text-5xl font-bold">
+‎            Hi, I am <span class="text-yellow-500">Chima Ben</span>
+‎          </h1>
+‎          <p class="text-white text-sm md:w-1/2 mx-auto px-1">
+‎            Web Designer & Developer with a strong interest in helping brands
+‎            and businesses grow through clean, professional websites.
+‎          </p>
+‎          <div id="social-links" class="mt-4 space-x-4">
+‎            <a
+‎              href="https://x.com/TheDev_Knight?t=plgKzWGsITg8SMXtMxjvjQ&s=09"
+‎              aria-label="Twitter"
+‎              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
+‎              ><i class="fab fa-x-twitter"></i
+‎            ></a>
+‎            <a
+‎              href="https://www.linkedin.com/in/chima-ben?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+‎              aria-label="LinkedIn"
+‎              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
+‎              ><i class="fab fa-linkedin-in"></i
+‎            ></a>
+‎            <a
+‎              href="#"
+‎              aria-label="whatsapp"
+‎              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
+‎              ><i class="fab fa-whatsapp"></i
+‎            ></a>
+‎            <a
+‎              href="https://github.com/benmarcel"
+‎              aria-label="github"
+‎              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
+‎              ><i class="fab fa-github"></i
+‎            ></a>
+‎          </div>
+‎        </div>
+‎      </section>
+‎
+‎      <section id="about" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
+‎        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+‎          <h2
+‎            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+‎          >
+‎            ABOUT ME
+‎          </h2>
+‎          <div
+‎            id="about-content-wrapper"
+‎            class="flex flex-col sm:flex-row items-center justify-between space-x-2"
+‎          >
+‎            <div
+‎              class="profile-picture flex-shrink-0 w-1/2 md:h-full sm:w-72 sm:h-72 rounded-md shadow-xl border  border-yellow-500"
+‎            >
+‎              <img
+‎                src="./profile-photo.png"
+‎                alt="Chima Ben profile picture"
+‎                width="100%"
+‎                height="100%"
+‎                loading="lazy"
+‎                class="rounded-md"
+‎              />
+‎            </div>
+‎            <div
+‎              class="about-details flex-grow max-w-2xl text-center md:text-left"
+‎            >
+‎              <h3
+‎                class="text-xl sm:text-2xl text-white font-semibold mb-2 mt-2"
+‎              >
+‎                Hi There! I'm Chima Ben
+‎              </h3>
+‎              <h4 class="text-sm sm:text-lg text-yellow-500 mb-4">
+‎                Web Designer & Developer
+‎              </h4>
+‎              <p class="text-white leading-relaxed mb-6 text-base sm:text-sm">
+‎                I'm Chima Ben, a Web Designer and Developer with a strong
+‎                interest in creating clean, intuitive, and high-performing
+‎                digital experiences that help brands grow, combining modern
+‎                design, efficient code, and a passion for continuous learning.
+‎              </p>
+‎              <ul
+‎                class="list-none p-0 m-0 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 mb-8"
+‎              >
+‎                <li class="text-white text-base">
+‎                  <span class="font-bold text-white mr-2">Birth Day:</span>
+‎                  June 1st
+‎                </li>
+‎                <li class="text-white text-base">
+‎                  <span class="font-bold text-white mr-2">Location:</span>
+‎                  Nigeria
+‎                </li>
+‎                <li class="text-white text-base">
+‎                  <span class="font-bold text-white mr-2">Email:</span>
+‎                  <a
+‎                    href="mailto:benmarcel381@gmail.com"
+‎                    class="text-yellow-500 hover:text-yellow-400 no-underline"
+‎                    >benmarcel381@gmail.com</a
+‎                  >
+‎                </li>
+‎                <li class="text-white text-base">
+‎                  <span class="font-bold text-white mr-2">Phone:</span>
+‎                  +2348023678500
+‎                </li>
+‎                <li class="text-white text-base">
+‎                  <span class="font-bold text-white mr-2">Language:</span>
+‎                  English
+‎                </li>
+‎                <li class="text-white text-base">
+‎                  <span class="font-bold text-white mr-2">Freelance:</span>
+‎                  Available
+‎                </li>
+‎              </ul>
+‎              <a
+‎                href="./My_resume (1).pdf"
+‎                class="inline-block bg-yellow-500 text-gray-900 py-3 px-8 rounded-md no-underline font-semibold transition-all duration-300 hover:bg-yellow-600 hover:-translate-y-1"
+‎                download
+‎                >Download CV</a
+‎              >
+‎            </div>
+‎          </div>
+‎        </div>
+‎      </section>
+‎      
+‎      <section id="projects" class="bg-white py-16 sm:py-20 text-gray-200">
+‎        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+‎          <h2
+‎            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+‎          >
+‎            Projects
+‎          </h2>
+‎          <div
+‎            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center"
+‎          >
+‎            <a
+‎              href="https://movierecc.netlify.app/"
+‎              class="block w-full max-w-sm no-underline"
+‎              aria-label="View Movie Recommendation App"
+‎            >
+‎              <div
+‎                class="project-card bg-gray-800 p-6 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
+‎              >
+‎                <i class="fas fa-film text-yellow-500 text-5xl mb-4"></i>
+‎                <h3 class="text-2xl font-semibold text-white mb-3">
+‎                  Movie Recommendation App
+‎                </h3>
+‎                <p class="text-white leading-relaxed text-base">
+‎                  Built a smart movie recommendation PWA using React, MongoDB
+‎                  and TMDB API. Users get suggestions based on favourite genres,
+‎                  create watchlists....
+‎                </p>
+‎              </div>
+‎            </a>
+‎
+‎            <a
+‎              href="https://benmarcel.github.io/agro_flow_project/"
+‎              class="block w-full max-w-sm no-underline"
+‎              aria-label="View Agro Flow project"
+‎            >
+‎              <div
+‎                class="project-card bg-gray-800 p-8 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
+‎              >
+‎                <i class="fas fa-seedling text-yellow-500 text-5xl mb-4"></i>
+‎                <h3 class="text-2xl font-semibold text-white mb-3">
+‎                  Agro Flow
+‎                </h3>
+‎                <p class="text-white leading-relaxed text-lg">
+‎                  A web platform that connects farmers with storage facilities
+‎                  and transporters. Built with HTML, CSS, and JavaScript for
+‎                  rural-urban logistics.
+‎                </p>
+‎              </div>
+‎            </a>
+‎
+‎            <a
+‎              href="https://github.com/benmarcel/Farmers-Hub.git"
+‎              class="block w-full max-w-sm no-underline"
+‎              aria-label="View Telemedicine App project"
+‎            >
+‎              <div
+‎                class="project-card bg-gray-800 p-8 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
+‎              >
+‎                <i class="fas fa-stethoscope text-yellow-500 text-5xl mb-4"></i>
+‎                <h3 class="text-2xl font-semibold text-white mb-3">
+‎                  Telemedicine App
+‎                </h3>
+‎                <p class="text-white leading-relaxed text-lg">
+‎                  Designed and developed a telehealth platform for remote
+‎                  consultations. Features include appointment booking, video
+‎                  calls, and health tips.
+‎                </p>
+‎              </div>
+‎            </a>
+‎          </div>
+‎        </div>
+‎      </section>
+‎
+‎      <section id="skills" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
+‎        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+‎          <h2
+‎            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+‎          >
+‎            My Drive & Abilities
+‎          </h2>
+‎          <div
+‎            class="flex flex-col md:flex-row justify-center items-start gap-12 flex-wrap"
+‎          >
+‎            <div class="core-drive-intro flex-1 max-w-md text-center md:text-left">
+‎              <p class="text-white text-lg leading-relaxed fade-in">
+‎                As a designer and developer, I'm driven to create beautiful, functional, and
+‎                user-friendly digital experiences by blending my skills in both design
+‎                and technical execution.
+‎              </p>
+‎            </div>
+‎            <div class="skills-list flex-2 max-w-xl w-full">
+‎              <h3
+‎                class="text-2xl font-bold text-yellow-500 mb-6 text-center md:text-left"
+‎              >
+‎                My Toolkit
+‎              </h3>
+‎              <div class="skill-item mb-6">
+‎                <span class="block text-white text-lg font-medium mb-2"
+‎                  >HTML & CSS / Tailwind CSS</span
+‎                >
+‎                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+‎                  <div
+‎                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+‎                    style="width: 95%"
+‎                    role="progressbar"
+‎                    aria-valuenow="95"
+‎                    aria-valuemin="0"
+‎                    aria-valuemax="100"
+‎                  ></div>
+‎                </div>
+‎              </div>
+‎              <div class="skill-item mb-6">
+‎                <span class="block text-white text-lg font-medium mb-2"
+‎                  >JavaScript</span
+‎                >
+‎                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+‎                  <div
+‎                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+‎                    style="width: 90%"
+‎                    role="progressbar"
+‎                    aria-valuenow="90"
+‎                    aria-valuemin="0"
+‎                    aria-valuemax="100"
+‎                  ></div>
+‎                </div>
+‎              </div>
+‎              <div class="skill-item mb-6">
+‎                <span class="block text-white text-lg font-medium mb-2">React</span>
+‎                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+‎                  <div
+‎                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+‎                    style="width: 75%"
+‎                    role="progressbar"
+‎                    aria-valuenow="75"
+‎                    aria-valuemin="0"
+‎                    aria-valuemax="100"
+‎                  ></div>
+‎                </div>
+‎              </div>
+‎              <div class="skill-item mb-6">
+‎                <span class="block text-white text-lg font-medium mb-2"
+‎                  >Node.js and Express</span
+‎                >
+‎                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+‎                  <div
+‎                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+‎                    style="width: 65%"
+‎                    role="progressbar"
+‎                    aria-valuenow="65"
+‎                    aria-valuemin="0"
+‎                    aria-valuemax="100"
+‎                  ></div>
+‎                </div>
+‎              </div>
+‎              <div class="skill-item mb-6">
+‎                <span class="block text-white text-lg font-medium mb-2"
+‎                  >MongoDB & SQL</span
+‎                >
+‎                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+‎                  <div
+‎                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+‎                    style="width: 70%"
+‎                    role="progressbar"
+‎                    aria-valuenow="70"
+‎                    aria-valuemin="0"
+‎                    aria-valuemax="100"
+‎                  ></div>
+‎                </div>
+‎              </div>
+‎              <div class="skill-item mb-6">
+‎                <span class="block text-white text-lg font-medium mb-2"
+‎                  >Git & GitHub</span
+‎                >
+‎                <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+‎                  <div
+‎                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+‎                    style="width: 80%"
+‎                    role="progressbar"
+‎                    aria-valu
         <label
           for="toggle-menu"
           class="text-white md:hidden focus:outline-none transition-colors duration-300 relative z-50 right-[-56px]"
