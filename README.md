@@ -31,7 +31,6 @@ Dynamic Mobile Menu: A clean, collapsible hamburger menu for mobile users.
 
 * Font Awesome: For scalable vector icons.
 
-* JavaScript: For the mobile menu toggle.
 
 ## Folder structure
 

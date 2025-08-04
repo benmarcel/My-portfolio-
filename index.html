@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chima Ben - Web Designer & Developer Portfolio" />
-    <meta name="keywords" content="Chima Ben, Web Designer, Web Developer, Portfolio, Projects, Skills" />
+    <meta
+      name="description"
+      content="Chima Ben - Web Designer & Developer Portfolio"
+    />
+    <meta
+      name="keywords"
+      content="Chima Ben, Web Designer, Web Developer, Portfolio, Projects, Skills"
+    />
     <meta name="author" content="Chima Ben" />
-   
-    
+
     <title>Chima Ben - Portfolio</title>
     <link
       rel="stylesheet"
@@ -19,96 +24,105 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="relative bg-gray-900">
-    <!-- Header -->
-    <header
-      id="main-header"
-      class="w-full text-white p-4 absolute top-0 left-0 z-50 backdrop-blur-sm"
-    >
-      <div class="flex justify-between items-center mx-auto max-w-6xl px-4">
-        <div
-          id="logo"
-          class="w-auto text-white text-xl md:text-2xl font-bold inline"
-        >
-          <a href="#hero" class="w-auto" aria-label="Chima Ben Home">
-            <i class="fas fa-user text-yellow-500"></i> Chima Ben</a
-          >
-        </div>
+   
+    <!-- Wrapper for toggle + menu -->
+<div class="relative">
 
-        <button
-          id="menu-button"
-          class="text-white md:hidden focus:outline-none transition-colors duration-300 relative z-50 right-[-56px]"
-          aria-label="Toggle Menu"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
-        <!-- Navigation -->
-        <nav id="main-nav" class="inline-flex items-center">
-          <ul class="hidden md:flex items-center space-x-4 list-none">
-            <li>
-              <a
-                href="#hero"
-                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
-                ><i class="fas fa-home text-yellow-500"></i> HOME</a
-              >
-            </li>
-            <li>
-              <a
-                href="#about"
-                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
-                ><i class="fas fa-user text-yellow-500"></i> ABOUT</a
-              >
-            </li>
-            <li>
-              <a
-                href="#projects"
-                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
-                ><i class="fas fa-folder text-yellow-500"></i> PROJECTS</a
-              >
-            </li>
-            <li>
-              <a
-                href="#skills"
-                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
-                ><i class="fas fa-cogs text-yellow-500"></i> SKILLS</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="active:text-yellow-500 hover:text-yellow-500 focus:text-yellow-500"
-                ><i class="fas fa-envelope text-yellow-500"></i> CONTACT</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div id="contact-info" class="inline text-white ml-4 max-md:hidden">
-          <i class="fas fa-phone"></i>
-          <a href="tel:+2348023678500" class="text-yellow-500"
-            >+2348023678500</a
-          >
-        </div>
+  <!-- Header -->
+  <header
+    id="main-header"
+    class="w-full text-white p-4 absolute top-0 left-0 z-50 backdrop-blur-sm"
+  >
+    <div class="flex justify-between items-center mx-auto max-w-6xl px-4">
+      <!-- Logo -->
+      <div id="logo" class="text-white text-xl md:text-2xl font-bold inline">
+        <a href="#hero" class="w-auto" aria-label="Chima Ben Home">
+          <i class="fas fa-user text-yellow-500"></i> Chima Ben
+        </a>
       </div>
-    </header>
-    <!-- Mobile Menu -->
-    <div
-      id="mobile-menu"
-      class="hidden md:hidden bg-gray-800 py-4 mt-16 fixed w-full z-40 shadow-lg"
-    >
-      <ul class="flex flex-col space-y-3 px-6 list-none p-0 m-0">
+
+      <!-- Desktop Nav -->
+      <nav id="main-nav" class="inline-flex items-center">
+        <ul class="hidden md:flex items-center space-x-4 list-none">
+          <!-- links... -->
+           <a
+            href="#hero"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-home text-yellow-500 mr-2"></i> HOME</a
+          >
+        </li>
         <li>
+          <a
+            href="#about"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-user text-yellow-500 mr-2"></i> ABOUT</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-file text-yellow-500 mr-2"></i> PROJECTS</a
+          >
+        </li>
+        <li>
+          <a
+            href="#skills"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-cogs text-yellow-500 mr-2"></i> SKILLS</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
+            ><i class="fas fa-envelope text-yellow-500 mr-2"></i> CONTACT</a
+          >
+        </li>
+       
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div id="contact-info" class="inline text-white ml-4 max-md:hidden">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+2348023678500" class="text-yellow-500">
+          +2348023678500
+        </a>
+      </div>
+
+     
+    </div>
+  </header>
+ <!-- Hamburger Toggle (Checkbox + Label) -->
+      <input
+        type="checkbox"
+        name="menu-toggle"
+        id="menu-toggle"
+        class="hidden peer"
+      />
+      <label
+        for="menu-toggle"
+        class="text-white md:hidden cursor-pointer absolute top-4 left-[90%] z-50 "
+        aria-label="Toggle Menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </label>
+  <!-- Mobile Menu MUST be inside same parent as the .peer input -->
+  <div
+    id="mobile-menu"
+    class="hidden peer-checked:block bg-gray-800 py-4 mt-16 fixed w-full z-40 shadow-lg absolute"
+  >
+    <ul class="flex flex-col space-y-3 px-6 list-none p-0 m-0">
+      <!-- Your mobile links here -->
+       <li>
           <a
             href="#hero"
             class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
@@ -150,9 +164,11 @@
             ><i class="fas fa-phone mr-2"></i> +2348023678500</a
           >
         </li>
-      </ul>
-    </div>
+    </ul>
+  </div>
 
+</div>
+<!-- main content -->
     <main>
       <!-- Hero Section -->
       <section
@@ -354,148 +370,135 @@
           </div>
         </div>
       </section>
-
-      <!-- Skills Section -->
-      <section id="skills" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
-        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-          <h2
-            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+      <!-- interest -->
+       <section id="skills" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+    <h2
+      class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
+    >
+      My Driving Force & Abilities
+    </h2>
+    <div
+      class="flex flex-col md:flex-row justify-center items-start gap-12 flex-wrap"
+    >
+      <div class="core-drive-intro flex-1 max-w-md text-center md:text-left">
+       
+        <p class="text-white text-lg leading-relaxed">
+          As a designer who codes and a developer with a design eye, I'm driven
+          to create digital experiences that are both beautiful and intuitive. I
+          believe the best products come from a deep understanding of both design
+          principles and technical execution.
+        </p>
+      </div>
+      <div class="skills-list flex-2 max-w-xl w-full">
+        <h3
+          class="text-2xl font-bold text-yellow-500 mb-6 text-center md:text-left"
+        >
+          My Toolkit
+        </h3>
+        <div class="skill-item mb-6">
+          <span class="block text-white text-lg font-medium mb-2"
+            >HTML & CSS / Tailwind CSS</span
           >
-            MY SKILLS
-          </h2>
-          <div
-            class="flex flex-col md:flex-row justify-center items-start md:items-center gap-12 flex-wrap"
-          >
-            <div class="skills-intro flex-1 max-w-md text-center md:text-left">
-              <p class="text-white text-lg leading-relaxed">
-                💼 All the skills that I have in that field of work are
-                mentioned.
-              </p>
-            </div>
-            <div class="skills-list flex-2 max-w-xl w-full">
-              <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2"
-                  >JavaScript</span
-                >
-                <div
-                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
-                >
-                  <div
-                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-                    style="width: 90%"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2"
-                  >Figma</span
-                >
-                <div
-                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
-                >
-                  <div
-                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-                    style="width: 40%"
-                    role="progressbar"
-                    aria-valuenow="40"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2"
-                  >HTML & CSS / Tailwind CSS</span
-                >
-                <div
-                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
-                >
-                  <div
-                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-                    style="width: 95%"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2"
-                  >React</span
-                >
-                <div
-                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
-                >
-                  <div
-                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-                    style="width: 75%"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2"
-                  >Node.js and Express</span
-                >
-                <div
-                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
-                >
-                  <div
-                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-                    style="width: 65%"
-                    role="progressbar"
-                    aria-valuenow="65"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2"
-                  >Google Workspace</span
-                >
-                <div
-                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
-                >
-                  <div
-                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-                    style="width: 95%"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-6">
-                <span class="block text-white text-lg font-medium mb-2"
-                  >SQL</span
-                >
-                <div
-                  class="w-full bg-gray-700 h-2 rounded-full overflow-hidden"
-                >
-                  <div
-                    class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-                    style="width: 55%"
-                    role="progressbar"
-                    aria-valuenow="55"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
+          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div
+              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+              style="width: 95%"
+              role="progressbar"
+              aria-valuenow="95"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
           </div>
         </div>
-      </section>
+        <div class="skill-item mb-6">
+          <span class="block text-white text-lg font-medium mb-2"
+            >JavaScript</span
+          >
+          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div
+              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+              style="width: 90%"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="skill-item mb-6">
+          <span class="block text-white text-lg font-medium mb-2">React</span>
+          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div
+              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+              style="width: 75%"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="skill-item mb-6">
+          <span class="block text-white text-lg font-medium mb-2"
+            >Node.js and Express</span
+          >
+          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div
+              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+              style="width: 65%"
+              role="progressbar"
+              aria-valuenow="65"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="skill-item mb-6">
+          <span class="block text-white text-lg font-medium mb-2">Figma</span>
+          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div
+              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+              style="width: 40%"
+              role="progressbar"
+              aria-valuenow="40"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="skill-item mb-6">
+          <span class="block text-white text-lg font-medium mb-2">SQL</span>
+          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div
+              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+              style="width: 55%"
+              role="progressbar"
+              aria-valuenow="55"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="skill-item mb-6">
+          <span class="block text-white text-lg font-medium mb-2"
+            >Google Workspace</span
+          >
+          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div
+              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
+              style="width: 95%"
+              role="progressbar"
+              aria-valuenow="95"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- Contact Section -->
       <section id="contact" class="bg-white py-16 sm:py-20 text-gray-200">
@@ -572,29 +575,6 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuButton = document.getElementById("menu-button");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        if (menuButton && mobileMenu) {
-          menuButton.addEventListener("click", function () {
-            mobileMenu.classList.toggle("hidden");
-            // Optional: Add aria-expanded for better accessibility
-            let isExpanded =
-              menuButton.getAttribute("aria-expanded") === "true" || false;
-            menuButton.setAttribute("aria-expanded", !isExpanded);
-          });
-
-          // Close mobile menu when a link is clicked
-          mobileMenu.querySelectorAll("a").forEach((link) => {
-            link.addEventListener("click", () => {
-              mobileMenu.classList.add("hidden");
-              menuButton.setAttribute("aria-expanded", "false");
-            });
-          });
-        }
-      });
-    </script>
+   
   </body>
 </html>
