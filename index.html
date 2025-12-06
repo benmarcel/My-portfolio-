@@ -100,8 +100,8 @@
   <circle cx="95" cy="85" r="1.5" fill="#d4af37" opacity="0.5">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
   </circle>
-</svg>
-CHIMA BEN</div>
+</svg> <span>Chima ben</span>
+</div>
             
             <!-- Desktop Navigation -->
             <ul class="nav-links">
@@ -113,7 +113,7 @@ CHIMA BEN</div>
             </ul>
 
             <!-- Mobile Menu Toggle -->
-            <button class="mobile-toggle" aria-label="Toggle Menu">
+            <button class="mobile-toggle" aria-label="Toggle Menu" type="button">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -130,7 +130,7 @@ CHIMA BEN</div>
                 <li><a href="#contact">Connect</a></li>
             </ul>
             <div class="mobile-social">
-                <a href="https://x.com/TheDev_Knight" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://x.com/chima_ben_dev" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/chima-ben" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/benmarcel" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
@@ -435,11 +435,14 @@ CHIMA BEN</div>
         document.querySelectorAll('.chapter').forEach(chapter => {
             observer.observe(chapter);
         });
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
 
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Message sent! (This is a demo)');
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            // console.log('Mobile menu toggled'); 
         });
     </script>
 </body>
