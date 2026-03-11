@@ -1,507 +1,782 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chima Ben — Fullstack Developer specialising in backend systems, APIs, and AI integration. Based in Nigeria.">
-  <meta name="keywords" content="Chima Ben, Fullstack Developer, Backend Engineer, AI Developer, Node.js, Next.js, TypeScript, Nigeria, Portfolio">
-  <meta name="author" content="Chima Ben">
-  <meta property="og:title" content="Chima Ben — Fullstack Developer · Backend & AI">
-  <meta property="og:image" content="screenshots/portfolio-site-img.png">
-  <meta property="og:description" content=" AI developer — building intelligent systems,
-          From concept to deployment.">
-  <meta property="og:type" content="website">
-  <link rel="icon" type="image/x-icon" href="logo.svg">
-  <title>Chima Ben — Fullstack Developer · From concept to deployment</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chima Ben — Fullstack Developer specialising in backend systems, APIs, and AI integration. Based in Nigeria."
+    />
+    <meta
+      name="keywords"
+      content="Chima Ben, Fullstack Developer, Backend Engineer, AI Developer, Node.js, Next.js, TypeScript, Nigeria, Portfolio"
+    />
+    <meta name="author" content="Chima Ben" />
+    <meta
+      property="og:title"
+      content="Chima Ben — Fullstack Developer · Backend & AI"
+    />
+    <meta
+      property="og:image"
+      content="https://chima-ben.netlify.app/screenshots/portfolio-site-img.png"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link
+      rel="image_src"
+      href="https://chima-ben.netlify.app/screenshots/portfolio-site-img.png"
+    />
+    <meta
+      property="og:description"
+      content=" AI developer — building intelligent systems,
+          From concept to deployment."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/x-icon" href="logo.svg" />
+    <title>Chima Ben — Fullstack Developer · From concept to deployment</title>
 
-  <!-- ── NAVIGATION ──────────────────────────────────────────────── -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <svg width="44" height="44" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#d4af37"/>
-              <stop offset="100%" stop-color="#f4d03f"/>
-            </linearGradient>
-            <radialGradient id="glow">
-              <stop offset="0%" stop-color="#d4af37" stop-opacity="0.25"/>
-              <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <circle cx="60" cy="60" r="58" fill="url(#glow)"/>
-          <circle cx="60" cy="60" r="56" fill="#141414" stroke="#d4af37" stroke-width="1.5" opacity="0.9"/>
-          <path d="M30 40 L18 60 L30 80" stroke="url(#gold)" stroke-width="5.5" stroke-linecap="round" fill="none"/>
-          <path d="M90 40 L102 60 L90 80" stroke="url(#gold)" stroke-width="5.5" stroke-linecap="round" fill="none"/>
-          <rect x="56" y="30" width="8" height="34" rx="4" fill="#ffffff" opacity="0.95"/>
-          <rect x="54" y="60" width="12" height="10" rx="2" fill="#e6e6e6"/>
-          <path d="M50 74 Q60 88 70 74 Q60 96 50 74" fill="#E50914"/>
-          <circle cx="25" cy="25" r="2" fill="#d4af37" opacity="0.6">
-            <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
-          </circle>
-        </svg>
-        <span class="logo-text">Chima Ben</span>
-      </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── NAVIGATION ──────────────────────────────────────────────── -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 120 120"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d4af37" />
+                <stop offset="100%" stop-color="#f4d03f" />
+              </linearGradient>
+              <radialGradient id="glow">
+                <stop offset="0%" stop-color="#d4af37" stop-opacity="0.25" />
+                <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="60" cy="60" r="58" fill="url(#glow)" />
+            <circle
+              cx="60"
+              cy="60"
+              r="56"
+              fill="#141414"
+              stroke="#d4af37"
+              stroke-width="1.5"
+              opacity="0.9"
+            />
+            <path
+              d="M30 40 L18 60 L30 80"
+              stroke="url(#gold)"
+              stroke-width="5.5"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <path
+              d="M90 40 L102 60 L90 80"
+              stroke="url(#gold)"
+              stroke-width="5.5"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <rect
+              x="56"
+              y="30"
+              width="8"
+              height="34"
+              rx="4"
+              fill="#ffffff"
+              opacity="0.95"
+            />
+            <rect x="54" y="60" width="12" height="10" rx="2" fill="#e6e6e6" />
+            <path d="M50 74 Q60 88 70 74 Q60 96 50 74" fill="#E50914" />
+            <circle cx="25" cy="25" r="2" fill="#d4af37" opacity="0.6">
+              <animate
+                attributeName="opacity"
+                values="0.6;1;0.6"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+          </svg>
+          <span class="logo-text">Chima Ben</span>
+        </div>
 
-      <ul class="nav-links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#the-journey">Experience</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Connect</a></li>
-      </ul>
-
-      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" type="button">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-      <ul role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#the-journey">Experience</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Connect</a></li>
-      </ul>
-      <div class="mobile-social">
-        <a href="https://x.com/chima_ben_dev" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/chima-ben" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/benmarcel" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ── HERO ────────────────────────────────────────────────────── -->
-  <section class="hero-cinematic" aria-label="Introduction">
-    <div class="parallax-bg" aria-hidden="true"></div>
-    <div class="hero-overlay" aria-hidden="true"></div>
-
-    <div class="hero-inner">
-      <!-- Left: text -->
-      <div class="hero-text-block">
-        <p class="hero-eyebrow">
-          <span class="eyebrow-dot" aria-hidden="true"></span>
-          Based in Nigeria &nbsp;·&nbsp; Open to opportunities
-        </p>
-
-        <h1 class="hero-name">
-          Chima<br><em>Ben</em>
-        </h1>
-
-        <p class="hero-tagline">
-          AI developer — building intelligent systems,<br>
-          From concept to deployment.
-        </p>
-
-        <ul class="hero-pills" aria-label="Specialisations">
-          <li>Fullstack Dev</li>
-          <li>Backend & APIs</li>
-          <li>AI Integration</li>
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#the-journey">Experience</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Connect</a></li>
         </ul>
 
-        <div class="hero-ctas">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="./chima-cv (1).pdf" download="./chima-cv (1).pdf" class="btn btn-outline">Download CV</a>
+        <button
+          class="mobile-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#the-journey">Experience</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Connect</a></li>
+        </ul>
+        <div class="mobile-social">
+          <a href="https://x.com/chima_ben_dev" aria-label="Twitter / X"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/chima-ben" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/benmarcel" aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── HERO ────────────────────────────────────────────────────── -->
+    <section class="hero-cinematic" aria-label="Introduction">
+      <div class="parallax-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <!-- Left: text -->
+        <div class="hero-text-block">
+          <p class="hero-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Based in Nigeria &nbsp;·&nbsp; Open to opportunities
+          </p>
+
+          <h1 class="hero-name">Chima<br /><em>Ben</em></h1>
+
+          <p class="hero-tagline">
+            AI developer — building intelligent systems,<br />
+            From concept to deployment.
+          </p>
+
+          <ul class="hero-pills" aria-label="Specialisations">
+            <li>Fullstack Dev</li>
+            <li>Backend & APIs</li>
+            <li>AI Integration</li>
+          </ul>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a
+              href="./chima-cv (1).pdf"
+              download="./chima-cv (1).pdf"
+              class="btn btn-outline"
+              >Download CV</a
+            >
+          </div>
+        </div>
+
+        <!-- Right: portrait -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-image-frame">
+            <img
+              src="portfolio-img-693446bd77144.webp"
+              alt="Chima Ben, Fullstack Developer based in Nigeria"
+              loading="eager"
+            />
+            <div class="hero-stat hero-stat--top">
+              <span class="stat-num">10+</span>
+              <span class="stat-lbl">Students Taught</span>
+            </div>
+            <div class="hero-stat hero-stat--bottom">
+              <span class="stat-num">5+</span>
+              <span class="stat-lbl">Projects Shipped</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Right: portrait -->
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-image-frame">
+      <a
+        href="#about"
+        class="scroll-indicator"
+        aria-label="Scroll to About section"
+      >
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ── 01: ABOUT ───────────────────────────────────────────────── -->
+    <section class="chapter" id="about" aria-labelledby="about-title">
+      <span class="chapter-number" aria-hidden="true">01</span>
+      <h2 class="chapter-title" id="about-title">THE BEGINNING</h2>
+
+      <div class="about-content">
+        <div class="profile-cinematic">
           <img
             src="portfolio-img-693446bd77144.webp"
-            alt="Chima Ben, Fullstack Developer based in Nigeria"
-            loading="eager"
+            alt="Chima Ben — Fullstack Developer and UX Designer"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="about-text">
+          <p>
+            👋 <strong>Hi, I'm Chima Ben.</strong> I'm a Fullstack Developer
+            with a growing focus on
+            <strong>backend systems and AI integration</strong> — the kind of
+            work that powers products from the inside out. I don't just build
+            features; I build the infrastructure that makes features reliable.
+          </p>
+          <p>
+            My journey started in 2023 through FreeCodeCamp, driven entirely by
+            curiosity. I was studying <strong>Animal Science</strong> at the
+            time — a degree that quietly taught me
+            <strong>precision, data analysis, and systems thinking</strong>.
+            Those same instincts now shape how I design APIs and think about
+            architecture.
+          </p>
+          <p>
+            My edge? I understand both sides of the stack. A background in
+            <strong>UX design</strong> means I don't just think about what the
+            server does — I think about what the user feels when things go
+            wrong, and I build systems that handle that gracefully.
+          </p>
+          <p>
+            I'm looking for a team building something meaningful, where backend
+            depth and user empathy belong in the same room.
+          </p>
+          <a
+            href="./chima-cv (1).pdf"
+            download="./chima-cv (1).pdf"
+            class="btn btn-primary"
+            >Download CV</a
           >
-          <div class="hero-stat hero-stat--top">
-            <span class="stat-num">10+</span>
-            <span class="stat-lbl">Students Taught</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 02: JOURNEY ─────────────────────────────────────────────── -->
+    <section class="chapter" id="the-journey" aria-labelledby="journey-title">
+      <span class="chapter-number" aria-hidden="true">02</span>
+      <h2 class="chapter-title" id="journey-title">THE JOURNEY</h2>
+
+      <div class="timeline-style-1">
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>FreeCodeCamp — Responsive Web Design</h3>
+            <span class="education-duration">2023</span>
+            <p>
+              Where it started. Built projects from scratch to prove the
+              fundamentals — HTML, CSS, responsive layouts. The beginning of a
+              deliberate shift.
+            </p>
           </div>
-          <div class="hero-stat hero-stat--bottom">
-            <span class="stat-num">5+</span>
-            <span class="stat-lbl">Projects Shipped</span>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>FreeCodeCamp — JavaScript Data Structures & Algorithms</h3>
+            <span class="education-duration">2024</span>
+            <p>
+              Pushed deeper into JavaScript — algorithmic thinking,
+              problem-solving under constraints. This is where coding stopped
+              feeling like typing and started feeling like thinking.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Bachelor's Degree in Animal Science</h3>
+            <span class="education-duration">2020 – 2025</span>
+            <p>
+              Graduated with grounding in data analysis, scientific research,
+              and systems thinking. The discipline here — not the livestock — is
+              what I carry into every technical problem.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>JavaScript Tutor — Hamplus Hub</h3>
+            <span class="education-duration">Apr 2025 – Jul 2025</span>
+            <p>
+              Designed and delivered JS curriculum for 10+ students. Teaching
+              forced me to understand concepts at a deeper level — if you can't
+              explain it simply, you don't know it well enough.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Full-Stack Bootcamp — 3MTT Nigeria</h3>
+            <span class="education-duration">Apr 2025 – Sep 2025</span>
+            <p>
+              Intensive program: React, Node.js, Express, PostgreSQL. Built
+              full-stack applications under real deadlines — the first time I
+              felt genuine production pressure.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>UI/UX Design Bootcamp — KodeCamp</h3>
+            <span class="education-duration">May 2025 – Sep 2025</span>
+            <p>
+              Immersive UX training: user research, wireframing, Figma,
+              usability testing. Understanding design made me a significantly
+              better backend developer — I now build APIs with the consumer in
+              mind.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Full-Stack Bootcamp — Power Learn Project</h3>
+            <span class="education-duration">Jul 2025 – Nov 2025</span>
+            <p>
+              Extended into Python, MongoDB, and startup development. Pitched a
+              product concept alongside technical coursework — the first time I
+              connected engineering with business viability.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>UI/UX Design Internship — FlexiSaf Edusoft</h3>
+            <span class="education-duration">Sep 2025 – Dec 2025</span>
+            <p>
+              First professional role. Collaborated with clients, conducted
+              usability tests, and iterated on live products. Confirmed that the
+              best systems are built by people who understand both the user and
+              the code.
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
-      <i class="fas fa-chevron-down" aria-hidden="true"></i>
-    </a>
-  </section>
+    <!-- ── 03: PROJECTS ─────────────────────────────────────────────── -->
+    <section class="chapter" id="projects" aria-labelledby="projects-title">
+      <span class="chapter-number" aria-hidden="true">03</span>
+      <h2 class="chapter-title" id="projects-title">SELECTED WORK</h2>
 
-  <!-- ── 01: ABOUT ───────────────────────────────────────────────── -->
-  <section class="chapter" id="about" aria-labelledby="about-title">
-    <span class="chapter-number" aria-hidden="true">01</span>
-    <h2 class="chapter-title" id="about-title">THE BEGINNING</h2>
-
-    <div class="about-content">
-      <div class="profile-cinematic">
-        <img
-          src="portfolio-img-693446bd77144.webp"
-          alt="Chima Ben — Fullstack Developer and UX Designer"
-          loading="lazy"
+      <div class="projects-grid">
+        <a
+          href="https://movierecc.netlify.app/"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-      </div>
+          <img
+            class="project-poster-img"
+            src="./screenshots/cineMate.png"
+            alt="CineMate movie recommendation app screenshot"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">Full-Stack · PWA</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>CineMate</h3>
+            <p class="project-problem">
+              Film fans had no reliable way to track recommendations — just DMs
+              going nowhere. CineMate brings watchlists, favourites, and
+              personalised suggestions into one persistent place.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>React</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>TMDB API</li>
+            </ul>
+          </div>
+        </a>
 
-      <div class="about-text">
-        <p>
-          👋 <strong>Hi, I'm Chima Ben.</strong> I'm a Fullstack Developer with a growing focus on <strong>backend systems and AI integration</strong> — the kind of work that powers products from the inside out. I don't just build features; I build the infrastructure that makes features reliable.
-        </p>
-        <p>
-          My journey started in 2023 through FreeCodeCamp, driven entirely by curiosity. I was studying <strong>Animal Science</strong> at the time — a degree that quietly taught me <strong>precision, data analysis, and systems thinking</strong>. Those same instincts now shape how I design APIs and think about architecture.
-        </p>
-        <p>
-          My edge? I understand both sides of the stack. A background in <strong>UX design</strong> means I don't just think about what the server does — I think about what the user feels when things go wrong, and I build systems that handle that gracefully.
-        </p>
-        <p>
-          I'm looking for a team building something meaningful, where backend depth and user empathy belong in the same room.
-        </p>
-        <a href="./chima-cv (1).pdf" download="./chima-cv (1).pdf" class="btn btn-primary">Download CV</a>
-      </div>
-    </div>
-  </section>
+        <a
+          href="https://farmpal-3mtt.vercel.app/"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/farmPal.png"
+            alt="FarmPal app screenshot"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">Full-Stack · AgriTech</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>FarmPal</h3>
+            <p class="project-problem">
+              Nigerian smallholder farmers lack access to affordable expert
+              advice. FarmPal connects them to extension workers and adds an
+              AI-powered inventory layer for smarter daily operations.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>React</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Gemini 2.0</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+        </a>
 
-  <!-- ── 02: JOURNEY ─────────────────────────────────────────────── -->
-  <section class="chapter" id="the-journey" aria-labelledby="journey-title">
-    <span class="chapter-number" aria-hidden="true">02</span>
-    <h2 class="chapter-title" id="journey-title">THE JOURNEY</h2>
+        <a
+          href="https://greener-ai.netlify.app/"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/greener-dashboard.png"
+            alt="Greener AI sustainability app screenshot"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">AI · Gamification</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>Greener AI</h3>
+            <p class="project-problem">
+              Sustainability advice is abundant — accountability is not. Greener
+              AI gamifies eco-friendly choices so users build real habits, not
+              good intentions that fade by Tuesday.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>React</li>
+              <li>AI-Powered</li>
+              <li>Gamification</li>
+            </ul>
+          </div>
+        </a>
 
-    <div class="timeline-style-1">
+        <a
+          href="https://www.behance.net/gallery/235597353/Campus-Crib"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/campus-crib.png"
+            alt="Campus Crib housing platform case study"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">UX Design · Case Study</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>Campus Crib</h3>
+            <p class="project-problem">
+              Students searching for off-campus housing in Nigeria face
+              unverified listings and no safety net. This UX case study designs
+              the trust layer the market is missing.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>Figma</li>
+              <li>User Research</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
+        </a>
 
-      <div class="timeline-item">
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <h3>FreeCodeCamp — Responsive Web Design</h3>
-          <span class="education-duration">2023</span>
-          <p>Where it started. Built projects from scratch to prove the fundamentals — HTML, CSS, responsive layouts. The beginning of a deliberate shift.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <h3>FreeCodeCamp — JavaScript Data Structures & Algorithms</h3>
-          <span class="education-duration">2024</span>
-          <p>Pushed deeper into JavaScript — algorithmic thinking, problem-solving under constraints. This is where coding stopped feeling like typing and started feeling like thinking.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <h3>Bachelor's Degree in Animal Science</h3>
-          <span class="education-duration">2020 – 2025</span>
-          <p>Graduated with grounding in data analysis, scientific research, and systems thinking. The discipline here — not the livestock — is what I carry into every technical problem.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <h3>JavaScript Tutor — Hamplus Hub</h3>
-          <span class="education-duration">Apr 2025 – Jul 2025</span>
-          <p>Designed and delivered JS curriculum for 10+ students. Teaching forced me to understand concepts at a deeper level — if you can't explain it simply, you don't know it well enough.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <h3>Full-Stack Bootcamp — 3MTT Nigeria</h3>
-          <span class="education-duration">Apr 2025 – Sep 2025</span>
-          <p>Intensive program: React, Node.js, Express, PostgreSQL. Built full-stack applications under real deadlines — the first time I felt genuine production pressure.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <h3>UI/UX Design Bootcamp — KodeCamp</h3>
-          <span class="education-duration">May 2025 – Sep 2025</span>
-          <p>Immersive UX training: user research, wireframing, Figma, usability testing. Understanding design made me a significantly better backend developer — I now build APIs with the consumer in mind.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <h3>Full-Stack Bootcamp — Power Learn Project</h3>
-          <span class="education-duration">Jul 2025 – Nov 2025</span>
-          <p>Extended into Python, MongoDB, and startup development. Pitched a product concept alongside technical coursework — the first time I connected engineering with business viability.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot" aria-hidden="true"></div>
-        <div class="timeline-content">
-          <h3>UI/UX Design Internship — FlexiSaf Edusoft</h3>
-          <span class="education-duration">Sep 2025 – Dec 2025</span>
-          <p>First professional role. Collaborated with clients, conducted usability tests, and iterated on live products. Confirmed that the best systems are built by people who understand both the user and the code.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ── 03: PROJECTS ─────────────────────────────────────────────── -->
-  <section class="chapter" id="projects" aria-labelledby="projects-title">
-    <span class="chapter-number" aria-hidden="true">03</span>
-    <h2 class="chapter-title" id="projects-title">SELECTED WORK</h2>
-
-    <div class="projects-grid">
-
-      <a href="https://movierecc.netlify.app/" class="project-poster" target="_blank" rel="noopener noreferrer">
-        <img class="project-poster-img" src="./screenshots/cineMate.png" alt="CineMate movie recommendation app screenshot" loading="lazy">
-        <div class="project-poster-overlay" aria-hidden="true"></div>
-        <span class="project-tag">Full-Stack · PWA</span>
-        <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
-        <div class="project-info">
-          <h3>CineMate</h3>
-          <p class="project-problem">Film fans had no reliable way to track recommendations — just DMs going nowhere. CineMate brings watchlists, favourites, and personalised suggestions into one persistent place.</p>
-          <ul class="project-stack" aria-label="Tech stack">
-            <li>React</li><li>Express</li><li>MongoDB</li><li>TMDB API</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="https://farmpal-3mtt.vercel.app/" class="project-poster" target="_blank" rel="noopener noreferrer">
-        <img class="project-poster-img" src="./screenshots/farmPal.png" alt="FarmPal app screenshot" loading="lazy">
-        <div class="project-poster-overlay" aria-hidden="true"></div>
-        <span class="project-tag">Full-Stack · AgriTech</span>
-        <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
-        <div class="project-info">
-          <h3>FarmPal</h3>
-          <p class="project-problem">Nigerian smallholder farmers lack access to affordable expert advice. FarmPal connects them to extension workers and adds an AI-powered inventory layer for smarter daily operations.</p>
-          <ul class="project-stack" aria-label="Tech stack">
-            <li>React</li><li>Express</li><li>MongoDB</li><li>Gemini 2.0</li><li>Tailwind</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="https://greener-ai.netlify.app/" class="project-poster" target="_blank" rel="noopener noreferrer">
-        <img class="project-poster-img" src="./screenshots/greener-dashboard.png" alt="Greener AI sustainability app screenshot" loading="lazy">
-        <div class="project-poster-overlay" aria-hidden="true"></div>
-        <span class="project-tag">AI · Gamification</span>
-        <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
-        <div class="project-info">
-          <h3>Greener AI</h3>
-          <p class="project-problem">Sustainability advice is abundant — accountability is not. Greener AI gamifies eco-friendly choices so users build real habits, not good intentions that fade by Tuesday.</p>
-          <ul class="project-stack" aria-label="Tech stack">
-            <li>React</li><li>AI-Powered</li><li>Gamification</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="https://www.behance.net/gallery/235597353/Campus-Crib" class="project-poster" target="_blank" rel="noopener noreferrer">
-        <img class="project-poster-img" src="./screenshots/campus-crib.png" alt="Campus Crib housing platform case study" loading="lazy">
-        <div class="project-poster-overlay" aria-hidden="true"></div>
-        <span class="project-tag">UX Design · Case Study</span>
-        <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
-        <div class="project-info">
-          <h3>Campus Crib</h3>
-          <p class="project-problem">Students searching for off-campus housing in Nigeria face unverified listings and no safety net. This UX case study designs the trust layer the market is missing.</p>
-          <ul class="project-stack" aria-label="Tech stack">
-            <li>Figma</li><li>User Research</li><li>Prototyping</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="https://fish-the-phish.vercel.app/" class="project-poster" target="_blank" rel="noopener noreferrer">
-        <img class="project-poster-img" src="./screenshots/fish-phish-scr.png" alt="Fish the Phish phishing detection tool screenshot" loading="lazy">
-        <div class="project-poster-overlay" aria-hidden="true"></div>
-        <span class="project-tag">AI · Cybersecurity</span>
-        <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
-        <div class="project-info">
-          <h3>Fish the Phish</h3>
-          <p class="project-problem">Phishing works because most people can't identify it under pressure. Paste any suspicious message and get an instant AI breakdown of links, sender intent, and red flags — before you click.</p>
-          <ul class="project-stack" aria-label="Tech stack">
-            <li>Groq AI</li><li>VirusTotal API</li><li>WHOIS</li><li>Vercel</li>
-          </ul>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ── 04: SKILLS ──────────────────────────────────────────────── -->
-  <section class="chapter" id="skills" aria-labelledby="skills-title">
-    <span class="chapter-number" aria-hidden="true">04</span>
-    <h2 class="chapter-title" id="skills-title">THE TOOLKIT</h2>
-
-    <div class="skills-groups">
-
-      <div class="skill-group">
-        <h3 class="skill-group-title">Languages</h3>
-        <ul class="skill-tags" role="list">
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>Python</li>
-          <li>HTML &amp; CSS</li>
-          <li>SQL</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
-        <ul class="skill-tags" role="list">
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>Next.js</li>
-          <li>React</li>
-          <li>Tailwind CSS</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="skill-group-title">Backend &amp; Data</h3>
-        <ul class="skill-tags" role="list">
-          <li>MongoDB</li>
-          <li>PostgreSQL</li>
-          <li>MySQL</li>
-          <li>REST APIs</li>
-          <li>Groq AI</li>
-          <li>Gemini API</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="skill-group-title">Design &amp; UX</h3>
-        <ul class="skill-tags" role="list">
-          <li>Figma</li>
-          <li>Wireframing</li>
-          <li>Prototyping</li>
-          <li>User Research</li>
-          <li>Usability Testing</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="skill-group-title">Tools &amp; Workflow</h3>
-        <ul class="skill-tags" role="list">
-          <li>Git &amp; GitHub</li>
-          <li>Vercel</li>
-          <li>Netlify</li>
-          <li>Vite</li>
-          <li>VS Code</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ── 05: CONTACT ─────────────────────────────────────────────── -->
-  <section class="chapter" id="contact" aria-labelledby="contact-title">
-    <span class="chapter-number" aria-hidden="true">05</span>
-    <h2 class="chapter-title" id="contact-title">THE NEXT CHAPTER</h2>
-
-    <div class="contact-layout">
-      <div class="contact-text-side">
-        <p>I'm always open to connecting with developers, potential collaborators, or anyone building something worth caring about. Whether you have a project in mind or just want to say hello — reach out.</p>
-        <a href="https://wa.me/+2348023678500" target="_blank" rel="noopener noreferrer" class="btn btn-outline contact-cta">
-          Send a Message
+        <a
+          href="https://fish-the-phish.vercel.app/"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/fish-phish-scr.png"
+            alt="Fish the Phish phishing detection tool screenshot"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">AI · Cybersecurity</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>Fish the Phish</h3>
+            <p class="project-problem">
+              Phishing works because most people can't identify it under
+              pressure. Paste any suspicious message and get an instant AI
+              breakdown of links, sender intent, and red flags — before you
+              click.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>Groq AI</li>
+              <li>VirusTotal API</li>
+              <li>WHOIS</li>
+              <li>Vercel</li>
+            </ul>
+          </div>
         </a>
       </div>
+    </section>
 
-      <ul class="contact-links" role="list">
-        <li>
-          <a href="mailto:benmarcel@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-            <span>Email Me</span>
-            <i class="fas fa-arrow-right contact-arrow" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/chima-ben/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-            <span>Connect on LinkedIn</span>
-            <i class="fas fa-arrow-right contact-arrow" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/benmarcel" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github" aria-hidden="true"></i>
-            <span>View GitHub</span>
-            <i class="fas fa-arrow-right contact-arrow" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://x.com/chima_ben_dev" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-x-twitter" aria-hidden="true"></i>
-            <span>Follow on X</span>
-            <i class="fas fa-arrow-right contact-arrow" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.behance.net/marcelben" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-behance" aria-hidden="true"></i>
-            <span>Behance Portfolio</span>
-            <i class="fas fa-arrow-right contact-arrow" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!-- ── 04: SKILLS ──────────────────────────────────────────────── -->
+    <section class="chapter" id="skills" aria-labelledby="skills-title">
+      <span class="chapter-number" aria-hidden="true">04</span>
+      <h2 class="chapter-title" id="skills-title">THE TOOLKIT</h2>
 
-  <footer>
-    <p>&copy; 2026 Chima Ben &nbsp;·&nbsp; A Story Still Being Written.</p>
-  </footer>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <ul class="skill-tags" role="list">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>HTML &amp; CSS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
 
-  <script>
-    // ── Navbar scroll state
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.pageYOffset > 80);
-    }, { passive: true });
+        <div class="skill-group">
+          <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
+          <ul class="skill-tags" role="list">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Next.js</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
 
-    // ── Chapter reveal via IntersectionObserver
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target); // fire once only
-        }
+        <div class="skill-group">
+          <h3 class="skill-group-title">Backend &amp; Data</h3>
+          <ul class="skill-tags" role="list">
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>REST APIs</li>
+            <li>Groq AI</li>
+            <li>Gemini API</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Design &amp; UX</h3>
+          <ul class="skill-tags" role="list">
+            <li>Figma</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>User Research</li>
+            <li>Usability Testing</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools &amp; Workflow</h3>
+          <ul class="skill-tags" role="list">
+            <li>Git &amp; GitHub</li>
+            <li>Vercel</li>
+            <li>Netlify</li>
+            <li>Vite</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 05: CONTACT ─────────────────────────────────────────────── -->
+    <section class="chapter" id="contact" aria-labelledby="contact-title">
+      <span class="chapter-number" aria-hidden="true">05</span>
+      <h2 class="chapter-title" id="contact-title">THE NEXT CHAPTER</h2>
+
+      <div class="contact-layout">
+        <div class="contact-text-side">
+          <p>
+            I'm always open to connecting with developers, potential
+            collaborators, or anyone building something worth caring about.
+            Whether you have a project in mind or just want to say hello — reach
+            out.
+          </p>
+          <a
+            href="https://wa.me/+2348023678500"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline contact-cta"
+          >
+            Send a Message
+          </a>
+        </div>
+
+        <ul class="contact-links" role="list">
+          <li>
+            <a
+              href="mailto:benmarcel@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span>Email Me</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chima-ben/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              <span>Connect on LinkedIn</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/benmarcel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span>View GitHub</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/chima_ben_dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-x-twitter" aria-hidden="true"></i>
+              <span>Follow on X</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.behance.net/marcelben"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-behance" aria-hidden="true"></i>
+              <span>Behance Portfolio</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Chima Ben &nbsp;·&nbsp; A Story Still Being Written.</p>
+    </footer>
+
+    <script>
+      // ── Navbar scroll state
+      const navbar = document.getElementById("navbar");
+      window.addEventListener(
+        "scroll",
+        () => {
+          navbar.classList.toggle("scrolled", window.pageYOffset > 80);
+        },
+        { passive: true },
+      );
+
+      // ── Chapter reveal via IntersectionObserver
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target); // fire once only
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+
+      document
+        .querySelectorAll(".chapter")
+        .forEach((c) => revealObserver.observe(c));
+
+      // ── Mobile menu toggle
+      const mobileToggle = document.querySelector(".mobile-toggle");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      mobileToggle.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("active");
+        mobileToggle.classList.toggle("active", isOpen);
+        mobileToggle.setAttribute("aria-expanded", isOpen);
       });
-    }, { threshold: 0.12 });
 
-    document.querySelectorAll('.chapter').forEach(c => revealObserver.observe(c));
-
-    // ── Mobile menu toggle
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const mobileMenu   = document.querySelector('.mobile-menu');
-
-    mobileToggle.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('active');
-      mobileToggle.classList.toggle('active', isOpen);
-      mobileToggle.setAttribute('aria-expanded', isOpen);
-    });
-
-    // Close menu when any nav link is clicked
-    document.querySelectorAll('.mobile-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        mobileToggle.classList.remove('active');
-        mobileToggle.setAttribute('aria-expanded', 'false');
+      // Close menu when any nav link is clicked
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+          mobileToggle.classList.remove("active");
+          mobileToggle.setAttribute("aria-expanded", "false");
+        });
       });
-    });
 
-    // ── Subtle parallax on hero bg (desktop only)
-    const parallaxBg = document.querySelector('.parallax-bg');
-    if (parallaxBg && window.matchMedia('(min-width: 769px)').matches) {
-      window.addEventListener('scroll', () => {
-        parallaxBg.style.transform = `translateY(${window.pageYOffset * 0.45}px)`;
-      }, { passive: true });
-    }
-  </script>
-
-</body>
+      // ── Subtle parallax on hero bg (desktop only)
+      const parallaxBg = document.querySelector(".parallax-bg");
+      if (parallaxBg && window.matchMedia("(min-width: 769px)").matches) {
+        window.addEventListener(
+          "scroll",
+          () => {
+            parallaxBg.style.transform = `translateY(${window.pageYOffset * 0.45}px)`;
+          },
+          { passive: true },
+        );
+      }
+    </script>
+  </body>
 </html>
