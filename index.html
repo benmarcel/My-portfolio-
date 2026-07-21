@@ -1,580 +1,782 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Chima Ben - Web Designer & Developer Portfolio"
+      content="Chima Ben — Fullstack Developer specialising in backend systems, APIs, and AI integration. Based in Nigeria."
     />
     <meta
       name="keywords"
-      content="Chima Ben, Web Designer, Web Developer, Portfolio, Projects, Skills"
+      content="Chima Ben, Fullstack Developer, Backend Engineer, AI Developer, Node.js, Next.js, TypeScript, Nigeria, Portfolio"
     />
     <meta name="author" content="Chima Ben" />
+    <meta
+      property="og:title"
+      content="Chima Ben — Fullstack Developer · Backend & AI"
+    />
+    <meta
+      property="og:image"
+      content="https://chima-ben.netlify.app/screenshots/portfolio-site-img.png"
+    />
 
-    <title>Chima Ben - Portfolio</title>
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link
+      rel="image_src"
+      href="https://chima-ben.netlify.app/screenshots/portfolio-site-img.png"
+    />
+    <meta
+      property="og:description"
+      content=" AI developer — building intelligent systems,
+          From concept to deployment."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/x-icon" href="logo.svg" />
+    <title>Chima Ben — Fullstack Developer · From concept to deployment</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="relative bg-gray-900">
-   
-    <!-- Wrapper for toggle + menu -->
-<div class="relative">
+  <body>
+    <!-- ── NAVIGATION ──────────────────────────────────────────────── -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 120 120"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d4af37" />
+                <stop offset="100%" stop-color="#f4d03f" />
+              </linearGradient>
+              <radialGradient id="glow">
+                <stop offset="0%" stop-color="#d4af37" stop-opacity="0.25" />
+                <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="60" cy="60" r="58" fill="url(#glow)" />
+            <circle
+              cx="60"
+              cy="60"
+              r="56"
+              fill="#141414"
+              stroke="#d4af37"
+              stroke-width="1.5"
+              opacity="0.9"
+            />
+            <path
+              d="M30 40 L18 60 L30 80"
+              stroke="url(#gold)"
+              stroke-width="5.5"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <path
+              d="M90 40 L102 60 L90 80"
+              stroke="url(#gold)"
+              stroke-width="5.5"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <rect
+              x="56"
+              y="30"
+              width="8"
+              height="34"
+              rx="4"
+              fill="#ffffff"
+              opacity="0.95"
+            />
+            <rect x="54" y="60" width="12" height="10" rx="2" fill="#e6e6e6" />
+            <path d="M50 74 Q60 88 70 74 Q60 96 50 74" fill="#E50914" />
+            <circle cx="25" cy="25" r="2" fill="#d4af37" opacity="0.6">
+              <animate
+                attributeName="opacity"
+                values="0.6;1;0.6"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+          </svg>
+          <span class="logo-text">Chima Ben</span>
+        </div>
 
-  <!-- Header -->
-  <header
-    id="main-header"
-    class="w-full text-white p-4 absolute top-0 left-0 z-50 backdrop-blur-sm"
-  >
-    <div class="flex justify-between items-center mx-auto max-w-6xl px-4">
-      <!-- Logo -->
-      <div id="logo" class="text-white text-xl md:text-2xl font-bold inline">
-        <a href="#hero" class="w-auto" aria-label="Chima Ben Home">
-          <i class="fas fa-user text-yellow-500"></i> Chima Ben
-        </a>
-      </div>
-
-      <!-- Desktop Nav -->
-      <nav id="main-nav" class="inline-flex items-center">
-        <ul class="hidden md:flex items-center space-x-4 list-none">
-          <!-- links... -->
-           <a
-            href="#hero"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-home text-yellow-500 mr-2"></i> HOME</a
-          >
-        </li>
-        <li>
-          <a
-            href="#about"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-user text-yellow-500 mr-2"></i> ABOUT</a
-          >
-        </li>
-        <li>
-          <a
-            href="#projects"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-file text-yellow-500 mr-2"></i> PROJECTS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#skills"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-cogs text-yellow-500 mr-2"></i> SKILLS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#contact"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-envelope text-yellow-500 mr-2"></i> CONTACT</a
-          >
-        </li>
-       
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#the-journey">Experience</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Connect</a></li>
         </ul>
-      </nav>
 
-      <!-- Contact -->
-      <div id="contact-info" class="inline text-white ml-4 max-md:hidden">
-        <i class="fas fa-phone"></i>
-        <a href="tel:+2348023678500" class="text-yellow-500">
-          +2348023678500
-        </a>
+        <button
+          class="mobile-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
 
-     
-    </div>
-  </header>
- <!-- Hamburger Toggle (Checkbox + Label) -->
-      <input
-        type="checkbox"
-        name="menu-toggle"
-        id="menu-toggle"
-        class="hidden peer"
-      />
-      <label
-        for="menu-toggle"
-        class="text-white md:hidden cursor-pointer absolute top-4 left-[90%] z-50 "
-        aria-label="Toggle Menu"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </label>
-  <!-- Mobile Menu MUST be inside same parent as the .peer input -->
-  <div
-    id="mobile-menu"
-    class="hidden peer-checked:block bg-gray-800 py-4 mt-16 fixed w-full z-40 shadow-lg absolute"
-  >
-    <ul class="flex flex-col space-y-3 px-6 list-none p-0 m-0">
-      <!-- Your mobile links here -->
-       <li>
-          <a
-            href="#hero"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-home text-yellow-500 mr-2"></i> HOME</a
-          >
-        </li>
-        <li>
-          <a
-            href="#about"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-user text-yellow-500 mr-2"></i> ABOUT</a
-          >
-        </li>
-        <li>
-          <a
-            href="#projects"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-file text-yellow-500 mr-2"></i> PROJECTS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#skills"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-cogs text-yellow-500 mr-2"></i> SKILLS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#contact"
-            class="block text-white hover:text-yellow-500 py-2 no-underline text-base font-medium transition-colors duration-300"
-            ><i class="fas fa-envelope text-yellow-500 mr-2"></i> CONTACT</a
-          >
-        </li>
-        <li class="pt-2">
-          <a
-            href="tel:+2348023678500"
-            class="block text-yellow-500 py-2 no-underline font-semibold hover:text-yellow-400 transition-colors duration-300"
-            ><i class="fas fa-phone mr-2"></i> +2348023678500</a
-          >
-        </li>
-    </ul>
-  </div>
+      <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#the-journey">Experience</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Connect</a></li>
+        </ul>
+        <div class="mobile-social">
+          <a href="https://x.com/chima_ben_dev" aria-label="Twitter / X"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/chima-ben" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/benmarcel" aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
 
-</div>
-<!-- main content -->
-    <main>
-      <!-- Hero Section -->
-      <section
-        id="hero"
-        class="w-full h-screen bg-cover bg-center relative"
-        style="background-image: url('./hero-bg.jpeg')"
-      >
-        <div
-          class="hero-content text-center text-white backdrop-blur-sm flex items-center justify-center h-full flex-col"
-        >
-          <h1 class="text-white text-lg md:text-5xl font-bold">
-            Hi, I am <span class="text-yellow-500">Chima Ben</span>
-          </h1>
-          <p class="text-white text-sm md:w-1/2 mx-auto px-1">
-            Web Designer & Developer with a strong interest in helping brands
-            and businesses grow through clean, professional websites.
+    <!-- ── HERO ────────────────────────────────────────────────────── -->
+    <section class="hero-cinematic" aria-label="Introduction">
+      <div class="parallax-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <!-- Left: text -->
+        <div class="hero-text-block">
+          <p class="hero-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Based in Nigeria &nbsp;·&nbsp; Open to opportunities
           </p>
-          <div id="social-links" class="mt-4 space-x-4">
+
+          <h1 class="hero-name">Chima<br /><em>Ben</em></h1>
+
+          <p class="hero-tagline">
+            AI developer — building intelligent systems,<br />
+            From concept to deployment.
+          </p>
+
+          <ul class="hero-pills" aria-label="Specialisations">
+            <li>Fullstack Dev</li>
+            <li>Backend & APIs</li>
+            <li>AI Integration</li>
+          </ul>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
             <a
-              href="https://x.com/TheDev_Knight?t=plgKzWGsITg8SMXtMxjvjQ&s=09"
-              aria-label="Twitter"
-              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
-              ><i class="fab fa-x-twitter"></i
-            ></a>
+              href="chima-cv(1).pdf"
+              download="chima-cv(1).pdf"
+              class="btn btn-outline"
+              >Download CV</a
+            >
+          </div>
+        </div>
+
+        <!-- Right: portrait -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-image-frame">
+            <img
+              src="portfolio-img-693446bd77144.webp"
+              alt="Chima Ben, Fullstack Developer based in Nigeria"
+              loading="eager"
+            />
+            <div class="hero-stat hero-stat--top">
+              <span class="stat-num">10+</span>
+              <span class="stat-lbl">Students Taught</span>
+            </div>
+            <div class="hero-stat hero-stat--bottom">
+              <span class="stat-num">5+</span>
+              <span class="stat-lbl">Projects Shipped</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a
+        href="#about"
+        class="scroll-indicator"
+        aria-label="Scroll to About section"
+      >
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ── 01: ABOUT ───────────────────────────────────────────────── -->
+    <section class="chapter" id="about" aria-labelledby="about-title">
+      <span class="chapter-number" aria-hidden="true">01</span>
+      <h2 class="chapter-title" id="about-title">THE BEGINNING</h2>
+
+      <div class="about-content">
+        <div class="profile-cinematic">
+          <img
+            src="portfolio-img-693446bd77144.webp"
+            alt="Chima Ben — Fullstack Developer and UX Designer"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="about-text">
+          <p>
+             <strong>Hi, I'm Chima Ben.</strong> I'm a Fullstack Developer
+            with a growing focus on
+            <strong>backend systems and AI integration</strong>, the kind of
+            work that powers products from the inside out. I don't just build
+            features; I build the infrastructure that makes features reliable.
+          </p>
+          <p>
+            My journey started in 2023 through FreeCodeCamp, driven entirely by
+            curiosity. I was studying <strong>Animal Science</strong> at the
+            time, a degree that quietly taught me
+            <strong>precision, data analysis, and systems thinking</strong>.
+            Those same instincts now shape how I design APIs and think about
+            architecture.
+          </p>
+          <p>
+            My edge? I understand both sides of the stack. A background in
+            <strong>UX design</strong> means I don't just think about what the
+            server does, I think about what the user feels when things go
+            wrong, and I build systems that handle that gracefully.
+          </p>
+          <p>
+            I'm looking for a team building something meaningful, where backend
+            depth and user empathy belong in the same room.
+          </p>
+          <a
+            href="chima-cv(1).pdf"
+            download="chima-cv(1).pdf"
+            class="btn btn-primary"
+            >Download CV</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 02: JOURNEY ─────────────────────────────────────────────── -->
+    <section class="chapter" id="the-journey" aria-labelledby="journey-title">
+      <span class="chapter-number" aria-hidden="true">02</span>
+      <h2 class="chapter-title" id="journey-title">THE JOURNEY</h2>
+
+      <div class="timeline-style-1">
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>FreeCodeCamp — Responsive Web Design</h3>
+            <span class="education-duration">2023</span>
+            <p>
+              Where it started. Built projects from scratch to prove the
+              fundamentals — HTML, CSS, responsive layouts. The beginning of a
+              deliberate shift.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>FreeCodeCamp — JavaScript Data Structures & Algorithms</h3>
+            <span class="education-duration">2024</span>
+            <p>
+              Pushed deeper into JavaScript — algorithmic thinking,
+              problem-solving under constraints. This is where coding stopped
+              feeling like typing and started feeling like thinking.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Bachelor's Degree in Animal Science</h3>
+            <span class="education-duration">2020 – 2025</span>
+            <p>
+              Graduated with grounding in data analysis, scientific research,
+              and systems thinking. The discipline here — not the livestock — is
+              what I carry into every technical problem.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>JavaScript Tutor — Hamplus Hub</h3>
+            <span class="education-duration">Apr 2025 – Jul 2025</span>
+            <p>
+              Designed and delivered JS curriculum for 10+ students. Teaching
+              forced me to understand concepts at a deeper level — if you can't
+              explain it simply, you don't know it well enough.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Full-Stack Bootcamp — 3MTT Nigeria</h3>
+            <span class="education-duration">Apr 2025 – Sep 2025</span>
+            <p>
+              Intensive program: React, Node.js, Express, PostgreSQL. Built
+              full-stack applications under real deadlines — the first time I
+              felt genuine production pressure.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>UI/UX Design Bootcamp — KodeCamp</h3>
+            <span class="education-duration">May 2025 – Sep 2025</span>
+            <p>
+              Immersive UX training: user research, wireframing, Figma,
+              usability testing. Understanding design made me a significantly
+              better backend developer — I now build APIs with the consumer in
+              mind.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>Full-Stack Bootcamp — Power Learn Project</h3>
+            <span class="education-duration">Jul 2025 – Nov 2025</span>
+            <p>
+              Extended into Python, MongoDB, and startup development. Pitched a
+              product concept alongside technical coursework — the first time I
+              connected engineering with business viability.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h3>UI/UX Design Internship — FlexiSaf Edusoft</h3>
+            <span class="education-duration">Sep 2025 – Dec 2025</span>
+            <p>
+              First professional role. Collaborated with clients, conducted
+              usability tests, and iterated on live products. Confirmed that the
+              best systems are built by people who understand both the user and
+              the code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 03: PROJECTS ─────────────────────────────────────────────── -->
+    <section class="chapter" id="projects" aria-labelledby="projects-title">
+      <span class="chapter-number" aria-hidden="true">03</span>
+      <h2 class="chapter-title" id="projects-title">SELECTED WORK</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://movierecc.netlify.app/"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/cineMate.png"
+            alt="CineMate movie recommendation app screenshot"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">Full-Stack · PWA</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>CineMate</h3>
+            <p class="project-problem">
+              Film fans had no reliable way to track recommendations — just DMs
+              going nowhere. CineMate brings watchlists, favourites, and
+              personalised suggestions into one persistent place.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>React</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>TMDB API</li>
+            </ul>
+          </div>
+        </a>
+
+        <a
+          href="https://farmpal-3mtt.vercel.app/"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/farmPal.png"
+            alt="FarmPal app screenshot"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">Full-Stack · AgriTech</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>FarmPal</h3>
+            <p class="project-problem">
+              Nigerian smallholder farmers lack access to affordable expert
+              advice. FarmPal connects them to extension workers and adds an
+              AI-powered inventory layer for smarter daily operations.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>React</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Gemini 2.0</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+        </a>
+
+        <a
+          href="https://greener-ai.netlify.app/"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/greener-dashboard.png"
+            alt="Greener AI sustainability app screenshot"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">AI · Gamification</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>Greener AI</h3>
+            <p class="project-problem">
+              Sustainability advice is abundant — accountability is not. Greener
+              AI gamifies eco-friendly choices so users build real habits, not
+              good intentions that fade by Tuesday.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>React</li>
+              <li>AI-Powered</li>
+              <li>Gamification</li>
+            </ul>
+          </div>
+        </a>
+
+        <a
+          href="https://www.behance.net/gallery/235597353/Campus-Crib"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/campus-crib.png"
+            alt="Campus Crib housing platform case study"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">UX Design · Case Study</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>Campus Crib</h3>
+            <p class="project-problem">
+              Students searching for off-campus housing in Nigeria face
+              unverified listings and no safety net. This UX case study designs
+              the trust layer the market is missing.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>Figma</li>
+              <li>User Research</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
+        </a>
+
+        <a
+          href="https://fish-the-phish.vercel.app/"
+          class="project-poster"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="project-poster-img"
+            src="./screenshots/fish-phish-scr.png"
+            alt="Fish the Phish phishing detection tool screenshot"
+            loading="lazy"
+          />
+          <div class="project-poster-overlay" aria-hidden="true"></div>
+          <span class="project-tag">AI · Cybersecurity</span>
+          <i class="fas fa-arrow-up-right project-arrow" aria-hidden="true"></i>
+          <div class="project-info">
+            <h3>Fish the Phish</h3>
+            <p class="project-problem">
+              Phishing works because most people can't identify it under
+              pressure. Paste any suspicious message and get an instant AI
+              breakdown of links, sender intent, and red flags — before you
+              click.
+            </p>
+            <ul class="project-stack" aria-label="Tech stack">
+              <li>Groq AI</li>
+              <li>VirusTotal API</li>
+              <li>WHOIS</li>
+              <li>Vercel</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── 04: SKILLS ──────────────────────────────────────────────── -->
+    <section class="chapter" id="skills" aria-labelledby="skills-title">
+      <span class="chapter-number" aria-hidden="true">04</span>
+      <h2 class="chapter-title" id="skills-title">THE TOOLKIT</h2>
+
+      <div class="skills-groups">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <ul class="skill-tags" role="list">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>HTML &amp; CSS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
+          <ul class="skill-tags" role="list">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Next.js</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Backend &amp; Data</h3>
+          <ul class="skill-tags" role="list">
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>REST APIs</li>
+            <li>Groq AI</li>
+            <li>Gemini API</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Design &amp; UX</h3>
+          <ul class="skill-tags" role="list">
+            <li>Figma</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>User Research</li>
+            <li>Usability Testing</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools &amp; Workflow</h3>
+          <ul class="skill-tags" role="list">
+            <li>Git &amp; GitHub</li>
+            <li>Vercel</li>
+            <li>Netlify</li>
+            <li>Vite</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 05: CONTACT ─────────────────────────────────────────────── -->
+    <section class="chapter" id="contact" aria-labelledby="contact-title">
+      <span class="chapter-number" aria-hidden="true">05</span>
+      <h2 class="chapter-title" id="contact-title">THE NEXT CHAPTER</h2>
+
+      <div class="contact-layout">
+        <div class="contact-text-side">
+          <p>
+            I'm always open to connecting with developers, potential
+            collaborators, or anyone building something worth caring about.
+            Whether you have a project in mind or just want to say hello — reach
+            out.
+          </p>
+          <a
+            href="https://wa.me/+2348023678500"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline contact-cta"
+          >
+            Send a Message
+          </a>
+        </div>
+
+        <ul class="contact-links" role="list">
+          <li>
             <a
-              href="https://www.linkedin.com/in/chima-ben?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              aria-label="LinkedIn"
-              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+              href="mailto:benmarcel@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span>Email Me</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+          <li>
             <a
-              href="#"
-              aria-label="whatsapp"
-              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
+              href="https://www.linkedin.com/in/chima-ben/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              <span>Connect on LinkedIn</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </li>
+          <li>
             <a
               href="https://github.com/benmarcel"
-              aria-label="github"
-              class="text-white hover:text-yellow-500 transition-colors duration-300 text-2xl"
-              ><i class="fab fa-github"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-      <!-- About Section -->
-      <section id="about" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
-        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-          <h2
-            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
-          >
-            ABOUT ME
-          </h2>
-          <div
-            id="about-content-wrapper"
-            class="flex flex-col sm:flex-row items-center justify-between space-x-2"
-          >
-            <div
-              class="profile-picture flex-shrink-0 w-1/2 md:h-full sm:w-72 sm:h-72 rounded-md shadow-xl  border border-yellow-500"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <img
-                src="./profile-photo.png"
-                alt="Chima Ben profile picture"
-                width="100%"
-                height="100%"
-                loading="lazy"
-                class="rounded-md"
-              />
-            </div>
-            <div
-              class="about-details flex-grow max-w-2xl text-center md:text-left"
-            >
-              <h3
-                class="text-xl sm:text-2xl text-white font-semibold mb-2 mt-2"
-              >
-                Hi There! I'm Chima Ben
-              </h3>
-              <h4 class="text-sm sm:text-lg text-yellow-500 mb-4">
-                Web Designer & Developer
-              </h4>
-              <p class="text-white leading-relaxed mb-6 text-base sm:text-sm">
-                I'm Chima Ben, a Web Designer and Developer with a strong
-                interest in creating clean, intuitive, and high-performing
-                digital experiences that help brands grow, combining modern
-                design, efficient code, and a passion for continuous learning.
-              </p>
-              <ul
-                class="list-none p-0 m-0 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 mb-8"
-              >
-                <li class="text-white text-base">
-                  <span class="font-bold text-white mr-2">Birth Day:</span>
-                  June 1st
-                </li>
-                <li class="text-white text-base">
-                  <span class="font-bold text-white mr-2">Location:</span>
-                  Nigeria
-                </li>
-                <li class="text-white text-base">
-                  <span class="font-bold text-white mr-2">Email:</span>
-                  <a
-                    href="mailto:benmarcel381@gmail.com"
-                    class="text-yellow-500 hover:text-yellow-400 no-underline"
-                    >benmarcel381@gmail.com</a
-                  >
-                </li>
-                <li class="text-white text-base">
-                  <span class="font-bold text-white mr-2">Phone:</span>
-                  +2348023678500
-                </li>
-                <li class="text-white text-base">
-                  <span class="font-bold text-white mr-2">Language:</span>
-                  English
-                </li>
-                <li class="text-white text-base">
-                  <span class="font-bold text-white mr-2">Freelance:</span>
-                  Available
-                </li>
-              </ul>
-              <a
-                href="./My_resume (1).pdf"
-                class="inline-block bg-yellow-500 text-gray-900 py-3 px-8 rounded-md no-underline font-semibold transition-all duration-300 hover:bg-yellow-600 hover:-translate-y-1"
-                download
-                >Download CV</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Projects Section -->
-      <section id="projects" class="bg-white py-16 sm:py-20 text-gray-200">
-        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-          <h2
-            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
-          >
-            Projects
-          </h2>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center"
-          >
-            <a
-              href="https://movierecc.netlify.app/"
-              class="block w-full max-w-sm no-underline"
-              aria-label="View Movie Recommendation App"
-            >
-              <div
-                class="project-card bg-gray-800 p-6 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
-              >
-                <i class="fas fa-film text-yellow-500 text-5xl mb-4"></i>
-                <h3 class="text-2xl font-semibold text-white mb-3">
-                  Movie Recommendation App
-                </h3>
-                <p class="text-white leading-relaxed text-base">
-                  Built a smart movie recommendation PWA using React, MongoDB
-                  and TMDB API. Users get suggestions based on favourite genres,
-                  create watchlists....
-                </p>
-              </div>
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span>View GitHub</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
             </a>
-
+          </li>
+          <li>
             <a
-              href="https://benmarcel.github.io/agro_flow_project/"
-              class="block w-full max-w-sm no-underline"
-              aria-label="View Agro Flow project"
+              href="https://x.com/chima_ben_dev"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <div
-                class="project-card bg-gray-800 p-8 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
-              >
-                <i class="fas fa-seedling text-yellow-500 text-5xl mb-4"></i>
-                <h3 class="text-2xl font-semibold text-white mb-3">
-                  Agro Flow
-                </h3>
-                <p class="text-white leading-relaxed text-lg">
-                  A web platform that connects farmers with storage facilities
-                  and transporters. Built with HTML, CSS, and JavaScript for
-                  rural-urban logistics.
-                </p>
-              </div>
+              <i class="fab fa-x-twitter" aria-hidden="true"></i>
+              <span>Follow on X</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
             </a>
-
+          </li>
+          <li>
             <a
-              href="https://github.com/benmarcel/Farmers-Hub.git"
-              class="block w-full max-w-sm no-underline"
-              aria-label="View Telemedicine App project"
+              href="https://www.behance.net/marcelben"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <div
-                class="project-card bg-gray-800 p-8 rounded-lg text-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col justify-between"
-              >
-                <i class="fas fa-stethoscope text-yellow-500 text-5xl mb-4"></i>
-                <h3 class="text-2xl font-semibold text-white mb-3">
-                  Telemedicine App
-                </h3>
-                <p class="text-white leading-relaxed text-lg">
-                  Designed and developed a telehealth platform for remote
-                  consultations. Features include appointment booking, video
-                  calls, and health tips.
-                </p>
-              </div>
+              <i class="fab fa-behance" aria-hidden="true"></i>
+              <span>Behance Portfolio</span>
+              <i
+                class="fas fa-arrow-right contact-arrow"
+                aria-hidden="true"
+              ></i>
             </a>
-          </div>
-        </div>
-      </section>
-      <!-- interest -->
-       <section id="skills" class="bg-gray-800 py-16 sm:py-20 text-gray-200">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-    <h2
-      class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
-    >
-      My Driving Force & Abilities
-    </h2>
-    <div
-      class="flex flex-col md:flex-row justify-center items-start gap-12 flex-wrap"
-    >
-      <div class="core-drive-intro flex-1 max-w-md text-center md:text-left">
-       
-        <p class="text-white text-lg leading-relaxed">
-          As a designer who codes and a developer with a design eye, I'm driven
-          to create digital experiences that are both beautiful and intuitive. I
-          believe the best products come from a deep understanding of both design
-          principles and technical execution.
-        </p>
+          </li>
+        </ul>
       </div>
-      <div class="skills-list flex-2 max-w-xl w-full">
-        <h3
-          class="text-2xl font-bold text-yellow-500 mb-6 text-center md:text-left"
-        >
-          My Toolkit
-        </h3>
-        <div class="skill-item mb-6">
-          <span class="block text-white text-lg font-medium mb-2"
-            >HTML & CSS / Tailwind CSS</span
-          >
-          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-            <div
-              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-              style="width: 95%"
-              role="progressbar"
-              aria-valuenow="95"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-        </div>
-        <div class="skill-item mb-6">
-          <span class="block text-white text-lg font-medium mb-2"
-            >JavaScript</span
-          >
-          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-            <div
-              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-              style="width: 90%"
-              role="progressbar"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-        </div>
-        <div class="skill-item mb-6">
-          <span class="block text-white text-lg font-medium mb-2">React</span>
-          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-            <div
-              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-              style="width: 75%"
-              role="progressbar"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-        </div>
-        <div class="skill-item mb-6">
-          <span class="block text-white text-lg font-medium mb-2"
-            >Node.js and Express</span
-          >
-          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-            <div
-              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-              style="width: 65%"
-              role="progressbar"
-              aria-valuenow="65"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-        </div>
-        <div class="skill-item mb-6">
-          <span class="block text-white text-lg font-medium mb-2">Figma</span>
-          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-            <div
-              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-              style="width: 40%"
-              role="progressbar"
-              aria-valuenow="40"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-        </div>
-        <div class="skill-item mb-6">
-          <span class="block text-white text-lg font-medium mb-2">SQL</span>
-          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-            <div
-              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-              style="width: 55%"
-              role="progressbar"
-              aria-valuenow="55"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-        </div>
-        <div class="skill-item mb-6">
-          <span class="block text-white text-lg font-medium mb-2"
-            >Google Workspace</span
-          >
-          <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-            <div
-              class="bg-yellow-500 h-full rounded-full transition-all duration-1000 ease-out"
-              style="width: 95%"
-              role="progressbar"
-              aria-valuenow="95"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="bg-white py-16 sm:py-20 text-gray-200">
-        <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-          <h2
-            class="section-title text-3xl sm:text-4xl font-bold text-center text-yellow-500 mb-12 uppercase tracking-wider"
-          >
-            CONTACT ME
-          </h2>
-          <form
-            action="#"
-            method="POST"
-            class="max-w-lg mx-auto bg-gray-900 p-8 rounded-lg shadow-xl"
-          >
-            <div class="mb-6">
-              <label
-                for="name"
-                class="block text-white text-lg font-medium mb-2"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                aria-required="true"
-              />
-            </div>
-            <div class="mb-6">
-              <label
-                for="email"
-                class="block text-white text-lg font-medium mb-2"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                aria-required="true"
-              />
-            </div>
-            <div class="mb-6">
-              <label
-                for="message"
-                class="block text-white text-lg font-medium mb-2"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-                class="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                aria-required="true"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="inline-block bg-yellow-500 text-gray-900 py-3 px-8 rounded-md no-underline font-semibold transition-all duration-300 hover:bg-yellow-600 hover:-translate-y-1"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8 text-gray-400 text-center text-sm">
-      <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
-        <p>&copy; 2025 Chima Ben. All Rights Reserved.</p>
-      </div>
+    <footer>
+      <p>&copy; 2026 Chima Ben &nbsp;·&nbsp; A Story Still Being Written.</p>
     </footer>
 
-   
+    <script>
+      // ── Navbar scroll state
+      const navbar = document.getElementById("navbar");
+      window.addEventListener(
+        "scroll",
+        () => {
+          navbar.classList.toggle("scrolled", window.pageYOffset > 80);
+        },
+        { passive: true },
+      );
+
+      // ── Chapter reveal via IntersectionObserver
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target); // fire once only
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+
+      document
+        .querySelectorAll(".chapter")
+        .forEach((c) => revealObserver.observe(c));
+
+      // ── Mobile menu toggle
+      const mobileToggle = document.querySelector(".mobile-toggle");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      mobileToggle.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("active");
+        mobileToggle.classList.toggle("active", isOpen);
+        mobileToggle.setAttribute("aria-expanded", isOpen);
+      });
+
+      // Close menu when any nav link is clicked
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+          mobileToggle.classList.remove("active");
+          mobileToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      // ── Subtle parallax on hero bg (desktop only)
+      const parallaxBg = document.querySelector(".parallax-bg");
+      if (parallaxBg && window.matchMedia("(min-width: 769px)").matches) {
+        window.addEventListener(
+          "scroll",
+          () => {
+            parallaxBg.style.transform = `translateY(${window.pageYOffset * 0.45}px)`;
+          },
+          { passive: true },
+        );
+      }
+    </script>
   </body>
 </html>
